@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--reset-->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <!--google icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!--email js-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("mPlnfjTE4QBc0aTho");
+      })();
+    </script>
+    <!--my css-->
+    <link href="./css/connect.css" rel="stylesheet" />
+    <title>Connect</title>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <!--hamburgur-->
+      <div class="hambugur">
+        <div class="clickable-bar" data-clicked="0">
+          <div class="bars">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <ul class="item-list text">
+            <li class="path">
+              <h4>
+                <a href="./index.html">Home</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="path">
+              <h4>
+                <a href="./about.html">About</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="path">
+              <h4>
+                <a href="./works.html">Works</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="hamconnect">
+              <h4>
+                <a>Connect</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+          </ul>
+        </div>
+        <span class="frame"></span>
+      </div>
+      <!--header-->
+      <div class="header">
+        <div class="header-left">
+          <button>
+            <a>Home</a>
+          </button>
+        </div>
+        <div class="header-center">
+          <button class="about">
+            <a href="./about.html">About</a>
+          </button>
+          <button class="works">
+            <a href="./works.html">Works</a>
+          </button>
+        </div>
+        <div class="header-right">
+          <button class="connect">
+            <a href="./connect.html">Connect</a>
+          </button>
+        </div>
+      </div>
+      <!--content-->
+      <div class="first-section text">
+        <div class="title">
+          <h1>Talk<br />to Me !</h1>
+        </div>
+        <div class="connectme">
+          <div class="first">
+            <h4>Your Name</h4>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="how do you want me to call you"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="second">
+            <h4>Your Mail</h4>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your mail account"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="third">
+            <h4>Let's talk !</h4>
+            <textarea
+              id="message"
+              placeholder="anything you want to say"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="send-btn">
+          <button onclick="SendMail()">Send</button>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+        <h4>Connect</h4>
+        <div class="connect-detail">
+          <div class="mail text">
+            <span class="material-symbols-rounded"> mail </span>
+            <p>gmail：9210085256emily@gmail.com</p>
+          </div>
+          <div class="phone text">
+            <span class="material-symbols-rounded"> phone_iphone </span>
+            <p>phone number： 0972967076</p>
+          </div>
+          <div class="line text">
+            <img src="./img/icon/line.svg" />
+            <p>line id：emilysu7107</p>
+          </div>
+        </div>
+        <h4 class="sitemap">Sitemap</h4>
+        <div class="sitemap-detail">
+          <div class="footer-home text">
+            <h5>
+              <a href="./index.html">Home</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-about text">
+            <h5>
+              <a href="./about.html">About</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-works text">
+            <h5>
+              <a href="./works.html">Works</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-connect text">
+            <h5>
+              <a>Connect</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--my js-->
+    <script src="./js/connect.js"></script>
+  </body>
+</html>

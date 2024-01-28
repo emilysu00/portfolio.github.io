@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Emily Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <!--google icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!--my css-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--three.js i-->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<version>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<v0.160.1>/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <!--hamburgur-->
+      <div class="hambugur">
+        <div class="clickable-bar" data-clicked="0">
+          <div class="bars">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <ul class="item-list text">
+            <li class="hamhome">
+              <h4>
+                <a id="hamburgurhome">Home</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="path">
+              <h4>
+                <a href="./about.html">About</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="path">
+              <h4>
+                <a href="./works.html">Works</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+            <li class="path">
+              <h4>
+                <a href="./connect.html">Connect</a>
+                <div class="hambugur_arrow">
+                  <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+              </h4>
+              <span class="underline"></span>
+            </li>
+          </ul>
+        </div>
+        <span class="frame"></span>
+      </div>
+      <!--header-->
+      <div class="header">
+        <div class="header-left">
+          <button>
+            <a>Home</a>
+          </button>
+        </div>
+        <div class="header-center">
+          <button class="about">
+            <a href="./about.html">About</a>
+          </button>
+          <button class="works">
+            <a href="./works.html">Works</a>
+          </button>
+        </div>
+        <div class="header-right">
+          <button class="connect">
+            <a href="./connect.html">Connect</a>
+          </button>
+        </div>
+      </div>
+      <!--3d module-->
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <!--content-->
+      <div class="first-section text">
+        <div class="title text">
+          <h2>2024 / Spring</h2>
+          <h4>Portfolio</h4>
+        </div>
+      </div>
+      <div class="second-section text">
+        <div class="name text">
+          <h1>YenHua<br />Su</h1>
+        </div>
+        <button><a href="./about.html"> More </a></button>
+        <div class="selfintro">
+          <p>
+            A second-year student majoring in Visual Communication Design at
+            National Taiwan University of Arts. I have a strong interest in
+            interface design and user experience.<br />
+
+            <br />
+            I work hard and responsible, throughout my academic journey, I have
+            frequently taken on the role of project manager in group. Currently,
+            I serve as the Event General Coordinator for the 111th Class
+            Exhibition of the Visual Communication Design Department.
+          </p>
+        </div>
+      </div>
+      <div class="third-section">
+        <div class="project">
+          <div class="project-title text">
+            <h1>Project</h1>
+          </div>
+
+          <div class="project-content">
+            <div class="flower text">
+              <h5>
+                <a href="./flower.html"
+                  >01 &emsp; Xiong jiang Tan Hua Fu CIS / IP design</a
+                >
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="bubble text">
+              <h5>
+                <a href="./bubble.html">
+                  02 &emsp; Bubble Monster Soap Design（ongoing）
+                </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="downgo text">
+              <h5>
+                <a href="./downgo.html">
+                  03 &emsp; DOWN GO Mountain First Aid（ongoing）
+                </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="longchen text">
+              <h5>
+                <a href="./longchen.html">
+                  04 &emsp; LongChen Paper CIS design
+                </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="milk text">
+              <h5>
+                <a href="./milk.html"> 05 &emsp; KuangChuan Web Redesign </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+          </div>
+        </div>
+        <div class="graphic">
+          <div class="graphic-title text">
+            <h1>Graphic</h1>
+          </div>
+          <div class="graphic-content">
+            <div class="ticket text">
+              <h5>
+                <a href="./ticket.html">
+                  01 &emsp; Guang Fu Film Seminar ticket design
+                </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="wavefont text">
+              <h5>
+                <a href="./wavefont.html"> 02 &emsp; Wave Font design </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+            <div class="Photographic text">
+              <h5>
+                <a href="./photograph.html"> 03 &emsp; Photographic </a>
+              </h5>
+              <span class="underline"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+        <h4>Connect</h4>
+        <div class="connect-detail">
+          <div class="mail text">
+            <span class="material-symbols-rounded"> mail </span>
+            <p>gmail：9210085256emily@gmail.com</p>
+          </div>
+          <div class="phone text">
+            <span class="material-symbols-rounded"> phone_iphone </span>
+            <p>phone number： 0972967076</p>
+          </div>
+          <div class="line text">
+            <img src="./img/icon/line.svg" />
+            <p>line id：emilysu7107</p>
+          </div>
+        </div>
+        <h4 class="sitemap">Sitemap</h4>
+        <div class="sitemap-detail">
+          <div class="footer-home text">
+            <h5>
+              <a>Home</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-about text">
+            <h5>
+              <a href="./about.html">About</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-works text">
+            <h5>
+              <a href="./works.html">Works</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+          <div class="footer-connect text">
+            <h5>
+              <a href="./connect.html">Connect</a>
+              <div class="footer-arrow">
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </div>
+            </h5>
+            <span class="underline"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
