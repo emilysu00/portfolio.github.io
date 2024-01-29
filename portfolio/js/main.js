@@ -1,6 +1,6 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.124.0";
-import { RGBELoader } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/loaders/RGBELoader.js";
-import { OBJLoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js";
+import * as THREE from "three";
+import { RGBELoader } from "three/addons/loaders/RGBELoader.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 
 var renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById("canvas"),
@@ -16,7 +16,7 @@ var scene = new THREE.Scene();
 // create a new RGBELoader to import the HDR
 const hdrEquirect = new RGBELoader()
   // add your HDR //
-  .load("../img/glass.hdr", function () {
+  .load("img/glass.hdr", function () {
     hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
   });
 scene.environment = hdrEquirect;
@@ -55,7 +55,7 @@ const material1 = new THREE.MeshStandardMaterial({
 
 // Load the model
 const objloader = new OBJLoader();
-objloader.load("../module/flowercombine.obj", (object) => {
+objloader.load("module/flowercombine.obj", (object) => {
   object.children[0].material = material1;
   object.scale.setScalar(3);
   object.position.set(0, -2.2, 0);
