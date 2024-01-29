@@ -16,9 +16,12 @@ var scene = new THREE.Scene();
 // create a new RGBELoader to import the HDR
 const hdrEquirect = new RGBELoader()
   // add your HDR //
-  .load("../img/glass.hdr", function () {
-    hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
-  });
+  .load(
+    "https://emilysu00.github.io/portfolio.github.io/portfolio/img/glass.hdr",
+    function () {
+      hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
+    }
+  );
 scene.environment = hdrEquirect;
 
 // add Fog to the scene - if too dark go lower with the second value
@@ -55,12 +58,15 @@ const material1 = new THREE.MeshStandardMaterial({
 
 // Load the model
 const objloader = new OBJLoader();
-objloader.load("../module/flowercombine.obj", (object) => {
-  object.children[0].material = material1;
-  object.scale.setScalar(3);
-  object.position.set(0, -2.2, 0);
-  group.add(object);
-});
+objloader.load(
+  "https://emilysu00.github.io/portfolio.github.io/portfolio/module/flowercombine.obj",
+  (object) => {
+    object.children[0].material = material1;
+    object.scale.setScalar(3);
+    object.position.set(0, -2.2, 0);
+    group.add(object);
+  }
+);
 
 //hide scroll bar
 document.addEventListener("DOMContentLoaded", () => {
