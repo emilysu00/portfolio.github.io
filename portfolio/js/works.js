@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("scrolling");
     scrollContainer.addEventListener("scroll", () => {
       let scrolled = scrollContainer.scrollTop;
-      if (scrolled >= 1.8 * window.innerHeight) {
+      if (scrolled >= 1.6 * window.innerHeight) {
         graphicElement.style.transform =
-          "translateY(" + 0.88 * window.innerHeight + "px)";
+          "translateY(" + 0.78 * window.innerHeight + "px)";
       } else {
         graphicElement.style.transform = "translateY(" + scrolled * 0.5 + "px)";
       }
     });
     scrollContainer.addEventListener("scroll", () => {
       let scrolled = scrollContainer.scrollTop;
-      if (scrolled >= 1.7 * window.innerHeight) {
+      if (scrolled >= 1.5 * window.innerHeight) {
         projectElement.style.transform =
-          "translateY(" + 0.25 * window.innerHeight + "px)";
+          "translateY(" + 0.06 * window.innerHeight + "px)";
       } else {
         projectElement.style.transform = "translateY(" + scrolled * 0.2 + "px)";
       }

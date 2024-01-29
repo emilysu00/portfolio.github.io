@@ -296,11 +296,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.longchen,
-.downgo,
-.photograph {
-  color: #ffffff;
-}
+
 .graphic-title {
   vertical-align: top;
   width: 16vw;
@@ -374,6 +370,9 @@ body {
   opacity: 0;
 }
 .project img:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   border-style: solid;
   border-color: #ffffff;
   border-width: 0.15vw;
@@ -411,6 +410,9 @@ body {
   margin-top: -3vh;
 }
 .graphic img:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   border-style: solid;
   border-color: #ffffff;
   border-width: 0.15vw;
