@@ -1,5 +1,5 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.124.0";
-import { RGBELoader } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/loaders/RGBELoader.js";
+import * as THREE from "https://cdn.skypack.dev/three@0.125.0";
+import { RGBELoader } from "https://cdn.skypack.dev/three@0.125.0/examples/jsm/loaders/RGBELoader.js";
 import { OBJLoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js";
 
 var renderer = new THREE.WebGLRenderer({
@@ -16,9 +16,12 @@ var scene = new THREE.Scene();
 // create a new RGBELoader to import the HDR
 const hdrEquirect = new RGBELoader()
   // add your HDR //
-  .load("../img/glass.hdr", function () {
-    hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
-  });
+  .load(
+    "https://emilysu00.github.io/portfolio.github.io/portfolio/img/glass.hdr",
+    function () {
+      hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
+    }
+  );
 scene.environment = hdrEquirect;
 
 // add Fog to the scene - if too dark go lower with the second value
@@ -55,14 +58,17 @@ const material1 = new THREE.MeshStandardMaterial({
 
 // Load the model
 const objloader = new OBJLoader();
-objloader.load("../module/flowercombine.obj", (object) => {
-  object.children[0].material = material1;
-  object.scale.setScalar(2.8);
-  object.position.set(-4.2, -2.2, 0);
-  object.rotation.x = 0.03;
-  object.rotation.z = -0.6;
-  group.add(object);
-});
+objloader.objloader.load(
+  "https://emilysu00.github.io/portfolio.github.io/portfolio/module/flowercombine.obj",
+  (object) => {
+    object.children[0].material = material1;
+    object.scale.setScalar(2.8);
+    object.position.set(-4.2, -2.2, 0);
+    object.rotation.x = 0.03;
+    object.rotation.z = -0.6;
+    group.add(object);
+  }
+);
 
 //hide scroll bar
 document.addEventListener("DOMContentLoaded", () => {
