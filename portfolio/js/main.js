@@ -1,4 +1,4 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.160.1";
+import * as THREE from "https://cdn.skypack.dev/three@0.125.0";
 import { RGBELoader } from "https://cdn.skypack.dev/three@0.125.0/examples/jsm/loaders/RGBELoader.js";
 import { OBJLoader } from "https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js";
 
