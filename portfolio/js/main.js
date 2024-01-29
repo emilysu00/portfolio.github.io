@@ -1,6 +1,6 @@
-import * as THREE from "three";
-import { RGBELoader } from "three/addons/loaders/RGBELoader.js";
-import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import * as THREE from "https://unpkg.com/three@0.160.1/build/three.module.js";
+import { RGBELoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/RGBELoader.js";
+import { OBJLoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/OBJLoader.js";
 
 var renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById("canvas"),
