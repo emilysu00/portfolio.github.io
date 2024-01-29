@@ -1,6 +1,6 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.160.1";
 import { RGBELoader } from "https://cdn.skypack.dev/three@0.160.1/examples/jsm/loaders/RGBELoader.js";
-import { OBJLoader } from "https://cdn.skypack.dev/three@0.160.1/examples/jsm/loaders/OBJLoader.js";
+import { OBJLoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/OBJLoader.js";
 
 var renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById("canvas"),
