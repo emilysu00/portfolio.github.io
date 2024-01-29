@@ -1,5 +1,5 @@
 import * as THREE from "https://unpkg.com/three@0.160.1/build/three.module.js";
-import { RGBELoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/RGBELoader.js";
+import { RGBELoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/OBJLoader.js";
 import { OBJLoader } from "https://unpkg.com/three@0.160.1/examples/jsm/loaders/OBJLoader.js";
 
 var renderer = new THREE.WebGLRenderer({
