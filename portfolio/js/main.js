@@ -17,7 +17,7 @@ var scene = new THREE.Scene();
 const hdrEquirect = new RGBELoader()
   // add your HDR //
   .load(
-    "https://emilysu00.github.io/portfolio.github.io/portfolio/img/glass3.hdr",
+    "https://emilysu00.github.io/portfolio.github.io/portfolio/img/glass1.hdr",
     function () {
       hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
     }
