@@ -1,0 +1,169 @@
+/* home */
+#home h2 {
+  margin: 80vh 0vw 15vh 0vw;
+  font-family: "Abhaya Libre";
+  @media (max-width: 768px) {
+    margin: 45vh 0vw 50vh 20vw;
+  }
+}
+
+/* about */
+#about .row {
+  display: flex;
+  align-items: flex-end; /* 讓內部元素對齊到底部 */
+}
+#self-protrait-phone {
+  margin-bottom: 2vh;
+}
+
+/* exp */
+#exp {
+  margin-top: 20vh;
+}
+.exp {
+  margin-bottom: 3vh;
+  width: 100%; /* 使其寬度自適應 */
+}
+.exp,
+.date,
+.theme {
+  display: inline-block;
+}
+.date {
+  width: 22%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/* projects */
+#projects {
+  margin-top: 20vh;
+}
+#projects a {
+  text-decoration: none;
+}
+#projects h5 {
+  padding-bottom: 1vh;
+  color: var(--blue);
+}
+#projects img {
+  width: 30px;
+}
+.project-row {
+  display: flex;
+  gap: 16px; /* 卡片間距 */
+}
+@media (max-width: 768px) {
+  .project-row {
+    flex-wrap: wrap;
+  }
+}
+.pro {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 86, 235, 0.1);
+  padding: 20px 20px 20px 20px;
+  transition: all 0.3s ease;
+}
+#projects a:hover {
+  cursor: none;
+}
+
+/* works */
+#works {
+  margin-top: 20vh;
+  display: flex; /* 使用 Flexbox 讓 work-left 和 work-right 並列 */
+  justify-content: space-between; /* 確保兩個區塊之間有適當的空間 */
+}
+.work {
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.work img {
+  width: 30vw;
+}
+.work p,
+.work svg {
+  display: inline-block;
+  margin-right: 0.5vw;
+}
+#work-left,
+#work-right {
+  display: block;
+  flex-wrap: wrap; /* 使內部元素換行 */
+  justify-content: space-between; /* 在水平方向上分散排列 */
+  width: 70%; /* 確保每個區塊佔 50% 寬度 */
+}
+#work-right {
+  margin-top: 10vh;
+}
+#works a:hover {
+  cursor: none;
+}
+.detail {
+  width: max-content;
+}
+
+@media (max-width: 768px) {
+  .work {
+    flex-wrap: wrap;
+  }
+  .work img {
+    width: 80vw;
+    margin-top: 5vh;
+  }
+  #work-right {
+    margin-top: 0vh;
+  }
+}
+
+/* articles */
+#articles {
+  margin-top: 20vh;
+}
+#articles a {
+  text-decoration: none;
+}
+#articles h5 {
+  color: var(--blue);
+}
+#articles img {
+  width: 20px;
+  align-items: end;
+}
+.articles-row {
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 0.5px solid var(--blue); /* 請注意 var() 要有 -- 變數名稱 */
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.article-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article-date {
+  display: inline-block;
+}
+
+.article-title {
+  display: inline-block;
+}
+
+#articles a:hover {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth; /* 設置平滑滾動 */
+}
+
+#about,
+#projects,
+#works,
+#articles {
+  scroll-margin-top: 30vh; /* 將目標元素的上邊距設置為視窗高度的一半，將其垂直居中 */
+}

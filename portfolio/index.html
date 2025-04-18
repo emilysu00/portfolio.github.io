@@ -2,20 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emily Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
-      rel="stylesheet"
-    />
-    <!--google icon-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--three.js i-->
     <script type="importmap">
       {
@@ -28,193 +23,319 @@
 
     <!--my css-->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
+  <!--body-->
   <body>
-    <div class="scroll-container">
-      <!--header-->
-      <div class="header">
-        <div class="header-left">
-          <button>
-            <a>YenHua</a>
-          </button>
-        </div>
-        <div class="header-center">
-          <button class="about">
-            <a href="./about.html">About</a>
-          </button>
-          <button class="works">
-            <a href="./works.html">Works</a>
-          </button>
-        </div>
-        <div class="header-right">
-          <button class="connect">
-            <a href="./connect.html">Connect</a>
-          </button>
-        </div>
+  <div class="scroll-container">
+    <div id="web">
+      <div id="spotlight"></div>
+      <div id="tail"></div>
+      <div id="lens-flare"></div>
+    </div>
+
+    <!--nav-->
+<section class="nav">
+  <div class="container">
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
+        <!-- <a class="en" href="#">en</a> -->
+        <!-- <a class="dark" href="#">dark</a> -->
+    </div>
+    <div class="row">
+      <div data-aos="fade-left" class="col-4 col-md-12 text-end">
+        <ul class="nav-links" >
+        <li class="nav-item"><a href="#home">/home</a></li>
+        <li class="nav-item"><a href="#about">/about</a></li>
+        <!-- <li class="nav-item"><a href="#projects">/projects</a></li> -->
+        <li class="nav-item"><a href="#works">/works</a></li>
+        <!-- <li class="nav-item"><a href="#articles">/articles</a></li> -->
+      </ul>
       </div>
-      <!--3d module-->
-      <div class="canvas-container">
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+      <div class="canvas-container forpc">
         <canvas id="canvas"></canvas>
       </div>
-      <!--content-->
-      <div class="first-section text">
-        <div class="title text">
-          <h2>2024 / Spring</h2>
-          <h4>Portfolio</h4>
-        </div>
-      </div>
-      <div class="second-section text">
-        <div class="name text">
-          <h1>YenHua<br />Su</h1>
-        </div>
-        <button><a href="./about.html"> More </a></button>
-        <div class="selfintro">
-          <p>
-            A second-year student majoring in Visual Communication Design at
-            National Taiwan University of Arts. I have a strong interest in
-            interface design and user experience.<br />
+    </div>
+</div>
 
-            <br />
-            I work hard and responsible, throughout my academic journey, I have
-            frequently taken on the role of project manager in group. Currently,
-            I serve as the Event General Coordinator for the 111th Class
-            Exhibition of the Visual Communication Design Department.
-          </p>
-        </div>
+<!--home-->
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-md-12">
+        <h2>SU YENHUA</h2>
       </div>
-      <div class="third-section">
-        <div class="project">
-          <div class="project-title text">
-            <h1>Project</h1>
-          </div>
+    </div>
+  </div>
+</section>
 
-          <div class="project-content">
-            <div class="flower text">
-              <h5>
-                <a href="./flower.html"
-                  >01 &emsp; Xiong jiang Tan Hua Fu CIS / IP design</a
-                >
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="bubble text">
-              <h5>
-                <a href="./bubble.html">
-                  02 &emsp; Bubble Monster Soap Design（ongoing）
-                </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="downgo text">
-              <h5>
-                <a href="./downgo.html">
-                  03 &emsp; DOWN GO Mountain First Aid（ongoing）
-                </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="longchen text">
-              <h5>
-                <a href="./longchen.html">
-                  04 &emsp; LongChen Paper CIS design
-                </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="milk text">
-              <h5>
-                <a href="./milk.html"> 05 &emsp; KuangChuan Web Redesign </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-          </div>
-        </div>
-        <div class="graphic">
-          <div class="graphic-title text">
-            <h1>Graphic</h1>
-          </div>
-          <div class="graphic-content">
-            <div class="ticket text">
-              <h5>
-                <a href="./ticket.html">
-                  01 &emsp; Guang Fu Film Seminar ticket design
-                </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="wavefont text">
-              <h5>
-                <a href="./wavefont.html"> 02 &emsp; Wave Font design </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-            <div class="Photographic text">
-              <h5>
-                <a href="./photograph.html"> 03 &emsp; Photographic </a>
-              </h5>
-              <span class="underline"></span>
-            </div>
-          </div>
-        </div>
+<!--about-->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-4 col-md-7">
+        <div>
+        <h4>/about me</h4>
       </div>
-      <!--footer-->
-      <div class="footer">
-        <h4>Connect</h4>
-        <div class="connect-detail">
-          <div class="mail text">
-            <span class="material-symbols-rounded"> mail </span>
-            <p>gmail：9210085256emily@gmail.com</p>
+      <div id="self-protrait-phone">
+        <img class="forphone col-4" loading="lazy" src="./img/me.jpg">
+      </div>
+      <div>
+        <p>我叫蘇妍樺，目前就讀臺灣藝術大學視覺傳達設計學系，專注於視覺設計與UI/UX領域，擅長從使用者需求出發，整合設計思維與美感表達，打造具備邏輯性與情感連結的數位體驗。<br>在學期間參與多項團隊合作與跨領域專案，具備良好的專案統籌與溝通協作能力。曾擔任班展總召與系學會幹部，具備規劃大型活動與設計輸出流程的實務經驗，亦具備撰寫簡報、進度管理與對外提案的能力。在UIUX設計方面，熟悉使用者研究、流程規劃、資訊架構與Figma等工具，能從前期研究到視覺設計完整參與專案流程。<br>設計對我而言不只是美學的實踐，更是解決問題與創造價值的方法。透過觀察、理解與轉譯，我致力於將抽象的概念轉化為具體且有效的視覺表達，讓使用者與設計之間產生真實連結。</p>
+      </div>
+      </div>
+      <di data-aos="fade-left" id="self-protrait-pc" class="col-md-2 offset-md-1">
+        <img class="forpc" loading="lazy" src="./img/me.jpg">
+      </div>
+  </div>
+</section>
+
+<!--exp-->
+<section id="exp">
+    <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-md-2 col-4">
+        <h4>/experiences</h4>
+      </div>
+      <di class="col-md-9 offset-md-1 col-4 offset-0">
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2023/12-2024/10</p>
           </div>
-          <div class="phone text">
-            <span class="material-symbols-rounded"> phone_iphone </span>
-            <p>phone number： 0972967076</p>
-          </div>
-          <div class="line text">
-            <img src="./img/icon/line.svg" />
-            <p>line id：emilysu7107</p>
+          <div class="theme">
+            <p>國立臺灣藝術大學 視傳系111級 班級展覽《異質空間 Heterotopia》總召</p>
           </div>
         </div>
-        <h4 class="sitemap">Sitemap</h4>
-        <div class="sitemap-detail">
-          <div class="footer-home text">
-            <h5>
-              <a>Home</a>
-              <div class="footer-arrow">
-                <span class="material-symbols-rounded">arrow_forward</span>
-              </div>
-            </h5>
-            <span class="underline"></span>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024/4-2025/3</p>
           </div>
-          <div class="footer-about text">
-            <h5>
-              <a href="./about.html">About</a>
-              <div class="footer-arrow">
-                <span class="material-symbols-rounded">arrow_forward</span>
-              </div>
-            </h5>
-            <span class="underline"></span>
+          <div class="theme">
+            <p>國立臺灣藝術大學 視傳系111 級系學會 活動組組長</p>
           </div>
-          <div class="footer-works text">
-            <h5>
-              <a href="./works.html">Works</a>
-              <div class="footer-arrow">
-                <span class="material-symbols-rounded">arrow_forward</span>
-              </div>
-            </h5>
-            <span class="underline"></span>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024/6-2025/4</p>
           </div>
-          <div class="footer-connect text">
-            <h5>
-              <a href="./connect.html">Connect</a>
-              <div class="footer-arrow">
-                <span class="material-symbols-rounded">arrow_forward</span>
-              </div>
-            </h5>
-            <span class="underline"></span>
+          <div class="theme">
+            <p>國立臺灣藝術大學 113年系展 公關組組長</p>
           </div>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024/7-2025/6</p>
+          </div>
+          <div class="theme">
+            <p>2024年度 巨思媒體集團美術部門 實習生</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024/11-2025/6</p>
+          </div>
+          <div class="theme">
+            <p>設計人雜誌52期 文字總編</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2025/6-2026/6</p>
+          </div>
+          <div class="theme">
+            <p>國立臺灣藝術大學 視傳系111級 畢業展覽 副召</p>
+          </div>
+          </a>
         </div>
       </div>
     </div>
+</section>
+
+<!--projects-->
+<!-- <section id="projects">
+    <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-md-12 col-4" id="protitle">
+        <h4>/projects</h4>
+      </div>
+      <div class="project-row col-4 col-md-12">
+        <div data-aos="fade-left" class="col-md-6 col-4 pro">
+        <div>
+          <a href="#">
+            <div class="arrow text-end">
+              <img loading="lazy" src="./img/arrow-go.svg">
+            </div>
+            <div class="name">
+              <h5>寶藏巖國際藝術村 品牌再造</h5>
+            </div>
+            <div class="tag">
+              <p>#UIUX  #brand  #exhibition </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-left" class="col-md-4 col-4 pro">
+        <div>
+          <a href="#">
+            <div class="arrow text-end">
+              <img loading="lazy" src="./img/arrow-go.svg">
+            </div>
+            <div class="name">
+              <h5>清大校園區域創新CCL<br class="forphone">課程查詢介面設計專案</h5>
+            </div>
+            <div class="tag">
+              <p>#UIUX</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-left" class="col-md-6 col-4 pro">
+        <div>
+          <a href="#">
+            <div class="arrow text-end">
+              <img loading="lazy" src="./img/arrow-go.svg">
+            </div>
+            <div class="name">
+              <h5>台北捷運GO APP再設計專案</h5>
+            </div>
+            <div class="tag">
+              <p>#UIUX</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+</section> -->
+
+
+<!--works-->
+<section id="works">
+  <div class="container">
+    <div class="row">
+    <div class="col-4 col-md-12">
+        <div>
+        <h4>/works</h4>
+      </div>
+    </div>
+    <div class="work">
+    <div id="work-left">
+      <a href="./pages/works/ticket.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/ticket.jpg">
+        <!-- <div class="detail">
+          <svg class="arrow-icon" width="50" height="8" viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0056eb"/>
+            <stop offset="100%" stop-color="#0056eb"/>
+          </linearGradient>
+        </defs>
+        <path class="arrow-path" d="M0 7H48L38.7692 1" stroke="black" stroke-width="1"/>
+      </svg>
+      <p>2023</p>
+      <p>光孚影展延伸設計</p>
+        </div> -->
+      </div>
+    </div>
+      </a>
+      <a href="./pages/works/font.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/font.jpg">
+        </div>
+    </div>
+      </a>
+      <a href="./pages/works/longchen.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/cis.jpg">
+        </div>
+    </div>
+      </a>
+      <a href="./pages/works/kuanchuan.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/milk.jpg">
+        </div>
+    </div>
+      </a>
+    </div>
+    <div id="work-right">
+      <a href="./pages/works/downgo.html">
+        <div data-aos="fade-up" class="col-4 col-md-6">
+      <div class="items">
+        <img loading="lazy" src="./img/downgo.jpg">
+      </div>
+    </div>
+      </a>
+      <a href="./pages/works/downgoweb.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/downgoweb.jpg">
+      </div>
+    </div>
+      </a>
+      <a href="./pages/works/book.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/book.jpg">
+      </div>
+    </div>
+      </a>
+      <a href="./pages/works/flower.html">
+        <div data-aos="fade-up" class="col-4 col-md-5">
+      <div class="items">
+        <img loading="lazy" src="./img/banner.gif">
+      </div>
+    </div>
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--articles-->
+<!-- <section id="articles">
+    <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-md-12 col-4" id="protitle">
+        <h4>/articles</h4>
+      </div>
+      <div class="articles-row">
+        <div class="article-item">
+          <a href="#">
+              <p class="article-date">2025/5</p>
+              <h5 class="article-title">華國美學</h5>
+              <img loading="lazy" class="arrow-icon" src="./img/right-arrow.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+</section> -->
+
+<!--footer-->
+<footer id="footer">
+  <p>&copy; 2025 SU YEN HUA Portfolio</p>
+</footer>
+    </div>
+  </div>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

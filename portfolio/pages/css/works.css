@@ -1,0 +1,48 @@
+#banner {
+  padding: 0 0vw;
+  width: 100vw;
+}
+
+#banner img,
+#banner video {
+  width: 100%;
+}
+body h5 {
+  color: var(--blue);
+  margin-bottom: 2vh;
+}
+body img {
+  width: 100%;
+}
+
+/* thought */
+#thought {
+  margin-top: 5vh;
+}
+
+/* apply */
+#apply {
+  margin-top: 20vh;
+}
+#apply h5 {
+  margin-top: 5vh;
+  display: inline-block;
+}
+#apply a:hover {
+  cursor: none;
+}
+#apply a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+}
+#apply .arrow img {
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
+
+/* team */
+#team {
+  margin-top: 10vh;
+}

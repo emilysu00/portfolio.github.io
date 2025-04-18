@@ -1,0 +1,79 @@
+/* motivation */
+#motivation {
+  margin-top: 20vh;
+}
+#motivation h5 {
+  margin-bottom: 5vh;
+}
+.motive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直置中 */
+  vertical-align: middle;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 86, 235, 0.1);
+  padding: 20px 20px 20px 20px;
+  transition: all 0.3s ease;
+}
+.inner-motive {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.motive-row {
+  display: flex;
+  gap: 16px; /* 卡片間距 */
+}
+@media (max-width: 768px) {
+  .motive-row {
+    flex-wrap: wrap;
+  }
+}
+
+/* TA */
+#TA {
+  margin-top: 20vh;
+}
+#TA-caption {
+  margin-bottom: 12vh;
+}
+.high-light {
+  font-size: 20vh;
+  font-weight: 800;
+}
+#TA ul {
+  margin-bottom: 5vh;
+}
+.analysis {
+  display: flex;
+  justify-content: center; /* 水平對齊 */
+  align-items: center; /* 垂直對齊 */
+}
+@media (max-width: 768px) {
+  .analysis {
+    flex-wrap: wrap;
+  }
+  #number {
+    margin-bottom: 5vh;
+  }
+}
+
+/* update */
+#apply h5 {
+  margin-top: 5vh;
+  display: inline-block;
+}
+#update a:hover {
+  cursor: none;
+}
+#update a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+}
+#update .arrow img {
+  vertical-align: middle;
+  width: 20px;
+  display: inline-block;
+}
