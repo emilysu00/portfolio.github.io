@@ -31,6 +31,14 @@
   }
 }
 
+/* up-motivation */
+#up-motivation {
+  margin-top: 20vh;
+}
+#up-motivation h5 {
+  margin-top: 5vh;
+}
+
 /* TA */
 #TA {
   margin-top: 20vh;
@@ -59,21 +67,29 @@
   }
 }
 
-/* update */
-#apply h5 {
-  margin-top: 5vh;
-  display: inline-block;
+/* cis */
+#cis {
+  margin-top: 20vh;
 }
-#update a:hover {
+
+/* update */
+#update h5,
+#cis h5 {
+  margin-bottom: 0vh;
+  margin-right: 1vw;
+}
+#update a:hover,
+#cis a:hover {
   cursor: none;
 }
-#update a {
+#update a,
+#cis a {
   text-decoration: none;
   color: var(--black);
-  display: inline-block;
+  display: flex;
 }
-#update .arrow img {
+#update .arrow img,
+#cis .arrow img {
   vertical-align: middle;
   width: 20px;
-  display: inline-block;
 }
