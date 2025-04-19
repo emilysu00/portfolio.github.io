@@ -28,7 +28,7 @@
 }
 .motive-row {
   display: flex;
-  gap: 16px; /* 卡片間距 */
+  gap: 10px; /* 卡片間距 */
 }
 @media (max-width: 768px) {
   .motive-row {
@@ -75,13 +75,16 @@
 /* research */
 #research,
 #persona,
-#brainstorm {
+#brainstorm,
+#test,
+#conclusion {
   margin-top: 20vh;
 }
 #research-caption {
   margin-bottom: 20vh;
 }
-#research .blue {
+#research .blue,
+#conclusion .blue {
   color: var(--blue);
 }
 .persona-caption {
@@ -126,6 +129,18 @@
 #cis .arrow img {
   vertical-align: middle;
   width: 20px;
+}
+
+/* test */
+.test1 p {
+  margin-bottom: 10vh;
+}
+.sus {
+  margin: 20vh 0vw;
+}
+
+.metro-ui {
+  border-radius: 56px;
 }
 
 .justify {
