@@ -338,11 +338,7 @@ p {
 .nav-links {
   top: 75vh;
 }
-@media (max-width: 768px) {
-  .nav-links {
-    top: 65vh;
-  }
-}
+
 .language {
   top: 3vh;
 }
@@ -413,8 +409,7 @@ p {
 }
 @media (max-width: 768px) {
   .go-top {
-    width: 30px;
-    height: 30px;
+    display: none;
   }
 }
 
