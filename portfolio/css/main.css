@@ -405,6 +405,12 @@ p {
   justify-content: center;
   z-index: 999;
 }
+@media (max-width: 768px) {
+  .go-top {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .go-top.show {
   opacity: 1;
