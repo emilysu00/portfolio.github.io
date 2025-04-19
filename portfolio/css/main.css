@@ -335,7 +335,7 @@ p {
   position: fixed;
 }
 .nav-links {
-  top: 80vh;
+  top: 75vh;
 }
 .language {
   top: 3vh;
@@ -384,4 +384,29 @@ p {
 }
 .aos-init[data-aos][data-aos].aos-animate {
   transform: unset;
+}
+
+/* go top */
+.go-top {
+  background-color: transparent;
+  position: fixed !important;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 86, 235, 0.1);
+  cursor: none;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s ease;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.go-top.show {
+  opacity: 1;
+  visibility: visible;
 }

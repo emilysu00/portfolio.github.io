@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 設置 hover 事件效果
   const hoverElements = document.querySelectorAll(
-    ".nav-item a, .en a, .language a, .work a, .pro a, .articles a, .apply a, .update a"
+    ".nav-item a, .en a, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img"
   );
 
   hoverElements.forEach((element) => {
@@ -63,10 +63,57 @@ window.addEventListener("scroll", () => {
   }, 800); // 0.8秒後移除
 });
 
-//en mode
-document.querySelector(".en").addEventListener("click", function () {
-  changeLanguage("en");
+// go top
+document.addEventListener("DOMContentLoaded", function () {
+  const goTopBtn = document.querySelector(".go-top");
+
+  // scroll 時判斷顯示
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  // 點擊滾動回頂部
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
+console.log("goTop script loaded");
+
+//en mode
+// document.querySelector(".en").addEventListener("click", function () {
+//   changeLanguage("en");
+// });
+
+// go top
+document.addEventListener("DOMContentLoaded", function () {
+  const goTopBtn = document.querySelector(".go-top");
+
+  // scroll 時判斷顯示
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  // 點擊滾動回頂部
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+console.log("goTop script loaded");
+
 // //dark mode
 // document.querySelector(".dark").addEventListener("click", function () {
 //   document.body.classList.toggle("dark-mode");
