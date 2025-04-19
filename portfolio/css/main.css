@@ -334,8 +334,14 @@ p {
   list-style: none;
   position: fixed;
 }
+
 .nav-links {
   top: 75vh;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    top: 65vh;
+  }
 }
 .language {
   top: 3vh;
