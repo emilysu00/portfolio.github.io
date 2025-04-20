@@ -84,7 +84,8 @@
   margin-bottom: 20vh;
 }
 #research .blue,
-#conclusion .blue {
+#conclusion .blue,
+#motivation .blue {
   color: var(--blue);
 }
 .persona-caption {
@@ -98,7 +99,7 @@
   margin-top: 2vh;
 }
 #HMW {
-  margin: 30vh 0vw;
+  margin: 60vh 0vw 40vh 0vw;
 }
 #HMW p {
   margin-bottom: 3vh;
@@ -145,4 +146,13 @@
 
 .justify {
   margin-top: 5vh;
+}
+
+.margin-top-30 {
+  margin-top: 30vh;
+}
+
+/* brainstorm */
+.brainstorm-row {
+  margin-left: 12.5%;
 }
