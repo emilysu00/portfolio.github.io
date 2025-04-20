@@ -18,7 +18,7 @@
 
 /* exp */
 #exp {
-  margin-top: 20vh;
+  margin-top: 30vh;
 }
 .exp {
   margin-bottom: 3vh;
@@ -38,7 +38,7 @@
 
 /* projects */
 #projects {
-  margin-top: 20vh;
+  margin-top: 30vh;
 }
 #projects a {
   text-decoration: none;
@@ -71,7 +71,7 @@
 
 /* works */
 #works {
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: flex; /* 使用 Flexbox 讓 work-left 和 work-right 並列 */
   justify-content: space-between; /* 確保兩個區塊之間有適當的空間 */
 }
@@ -140,7 +140,7 @@
 
 /* articles */
 #articles {
-  margin-top: 20vh;
+  margin-top: 30vh;
 }
 #articles a {
   text-decoration: none;
