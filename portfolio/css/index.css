@@ -82,11 +82,30 @@
 }
 .work img {
   width: 30vw;
+  border-radius: 10px;
 }
-.work p,
-.work svg {
-  display: inline-block;
-  margin-right: 0.5vw;
+.work .items {
+  position: relative;
+  height: 100%;
+  overflow: hidden; /* 重點！ */
+}
+.work p {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 86, 235, 0.1);
+  padding: 4px 12px 4px 12px;
+  white-space: nowrap; /* 不換行 */
+  width: fit-content;
+  color: var(--blue);
+  background-color: #fafafa99;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-weight: 400;
+}
+.work a {
+  text-decoration: none;
 }
 #work-left,
 #work-right {
@@ -97,21 +116,22 @@
 }
 #work-right {
   margin-top: 10vh;
+  margin-left: 10px;
 }
 #works a:hover {
   cursor: none;
-}
-.detail {
-  width: max-content;
 }
 
 @media (max-width: 768px) {
   .work {
     flex-wrap: wrap;
   }
+  #work-left,
+  #work-right {
+    width: 100%; /* 確保每個區塊佔 50% 寬度 */
+  }
   .work img {
     width: 80vw;
-    margin-top: 5vh;
   }
   #work-right {
     margin-top: 0vh;
