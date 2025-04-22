@@ -34,6 +34,10 @@
   .motive-row {
     flex-wrap: wrap;
   }
+  .motive-row > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 /* up-motivation */
@@ -54,6 +58,12 @@
 .high-light {
   font-size: 20vh;
   font-weight: 800;
+}
+@media (max-width: 768px) {
+  .high-light {
+    font-size: 10vh;
+    font-weight: 800;
+  }
 }
 #TA ul {
   margin-bottom: 5vh;
@@ -80,6 +90,7 @@
 #conclusion {
   margin-top: 30vh;
 }
+
 #research-caption {
   margin-bottom: 20vh;
 }
@@ -155,4 +166,14 @@
 /* brainstorm */
 .brainstorm-row {
   margin-left: 12.5%;
+}
+
+@media (max-width: 768px) {
+  .brainstorm-row {
+    margin-left: 0%;
+  }
+  #re,
+  #user {
+    margin-bottom: 5vh;
+  }
 }
