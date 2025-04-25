@@ -29,8 +29,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -67,14 +67,14 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 offset-md-4 col-md-8">
         <div>
-            <h5>/Down Go 登山緊急救難手冊 - 作品理念</h5>
+            <h5 id="downgo-title">/Down Go 登山緊急救難手冊 - 作品理念</h5>
         </div>
         <div>
-            <p>以像素風格為主要視覺語言，透過遊戲化互動的方式，將登山須知與緊急自救方法轉化為易於理解且具有趣味性的資訊傳遞方式。我們希望打破傳統說明手冊的刻板印象，讓使用者在輕鬆的情境下吸收重要的安全知識。</p> <br>
-                    <p>小手冊：整合登山時的須知事項與緊急應對指南，以像素風格插圖與清晰的分步說明，降低使用者的理解門檻。</p>
-                    <p>骨折夾板 & 繃帶外盒：不僅具備實際救援功能，亦在外觀設計上加入簡單直覺的圖示，使使用者能迅速掌握正確使用方式。</p>
-                    <p>登山路徑標記帶：透過鮮明的像素化設計提升可視性，並結合基礎求救訊號的圖示，讓登山者能在突發狀況下發揮更大的求生作用。</p> <br>
-            <p>我們希望這套設計不僅是單純的登山安全指南，更是一種能夠讓使用者寓教於樂、提升生存技能的體驗，將登山的風險意識轉化為一種可親近的知識，確保戶外探險的安全與樂趣並存。</p>
+            <p id="downgo-intro1">以像素風格為主要視覺語言，透過遊戲化互動的方式，將登山須知與緊急自救方法轉化為易於理解且具有趣味性的資訊傳遞方式。我們希望打破傳統說明手冊的刻板印象，讓使用者在輕鬆的情境下吸收重要的安全知識。</p> <br>
+                    <p id="downgo-intro2">小手冊：整合登山時的須知事項與緊急應對指南，以像素風格插圖與清晰的分步說明，降低使用者的理解門檻。</p>
+                    <p id="downgo-intro3">骨折夾板 & 繃帶外盒：不僅具備實際救援功能，亦在外觀設計上加入簡單直覺的圖示，使使用者能迅速掌握正確使用方式。</p>
+                    <p id="downgo-intro4">登山路徑標記帶：透過鮮明的像素化設計提升可視性，並結合基礎求救訊號的圖示，讓登山者能在突發狀況下發揮更大的求生作用。</p> <br>
+            <p id="downgo-intro5">我們希望這套設計不僅是單純的登山安全指南，更是一種能夠讓使用者寓教於樂、提升生存技能的體驗，將登山的風險意識轉化為一種可親近的知識，確保戶外探險的安全與樂趣並存。</p>
         </div>
       </div>
     </div>
@@ -113,17 +113,13 @@
     <div class="row">
       <div class="col-2 col-md-1">
         <div>
-            <h5>設計團隊</h5>
+            <h5 id="design-team">設計團隊</h5>
         </div>
       </div>
       <div class="col-4 col-md-11">
         <div>
-            <p>企劃發想 \ 吳怡靜、蘇妍樺<br>
-                手冊設計 \ 吳怡靜、蘇妍樺<br>
-                插畫繪製 \ 吳怡靜、蘇妍樺<br>
-                標記帶設計 \ 蘇妍樺<br>
-                繃帶外盒設計 \ 蘇妍樺<br>
-                骨折夾板設計 \ 吳怡靜<br>
+            <p id="downgo-name">企劃發想 \ 吳怡靜、蘇妍樺<br>
+                視覺設計 \ 吳怡靜、蘇妍樺<br>
                 攝影 \ 吳怡靜
             </p>
         </div>
@@ -144,6 +140,7 @@
     </div>
   </div>
     <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>

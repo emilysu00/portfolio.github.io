@@ -29,8 +29,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -67,10 +67,10 @@
     <div class="row">
       <div data-aos="fade-left" class="offset-0 col-4 offset-md-4 col-md-8">
         <div>
-            <h5>/榮成紙業 CIS - 作品理念</h5>
+            <h5 id="paper-title">/榮成紙業 CIS - 作品理念</h5>
         </div>
         <div>
-            <p>我們希望透過設計傳遞企業在資源回收再生技術上的領先優勢，並強調其「再生、循環、減碳」的核心理念。<br>設計方向圍繞四大關鍵字——環保、循環、紙材、工業，在展現品牌永續精神的同時，也突顯其作為工業用紙製造商的專業形象。我們透過標誌、品牌色彩、字體規劃、輔助圖形與應用設計等，構建完整的企業識別系統，使品牌更具一致性與識別度，並能靈活運用於各類企業形象與產品應用場景中。<br>希望不僅優化視覺識別，也進一步深化榮成紙業的品牌價值，使其在市場上更具差異化，強化消費者對於環保與循環經濟的認同感。</p>
+            <p id="paper-intro">我們希望透過設計傳遞企業在資源回收再生技術上的領先優勢，並強調其「再生、循環、減碳」的核心理念。<br>設計方向圍繞四大關鍵字——環保、循環、紙材、工業，在展現品牌永續精神的同時，也突顯其作為工業用紙製造商的專業形象。我們透過標誌、品牌色彩、字體規劃、輔助圖形與應用設計等，構建完整的企業識別系統，使品牌更具一致性與識別度，並能靈活運用於各類企業形象與產品應用場景中。<br>希望不僅優化視覺識別，也進一步深化榮成紙業的品牌價值，使其在市場上更具差異化，強化消費者對於環保與循環經濟的認同感。</p>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
   <div class="container">
     <div class="row">
         <div data-aos="fade-right" class="col-4 col-md-12">
-            <h5>/企業標誌、輔助圖形與標準色</h5>
+            <h5 id="paper-sub1">/企業標誌、輔助圖形與標準色</h5>
         </div>
       <div data-aos="fade-up" class="forpc col-md-12">
         <img loading="lazy" src="../img/LC-logo.svg">
@@ -94,7 +94,7 @@
         <img loading="lazy" src="../img/LC-1.webp">
       </div>
       <div data-aos="fade-right" class="col-4 col-md-12">
-        <h5>/設計載體應用</h5>
+        <h5 id="paper-sub2">/設計載體應用</h5>
       </div>
       <div data-aos="fade-up" class="col-md-7 col-4">
         <img loading="lazy" src="../img/LC-2.webp">
@@ -115,13 +115,13 @@
         <img loading="lazy" src="../img/LC-7.webp">
       </div>
       <div data-aos="fade-right" class="col-4 col-md-12">
-        <h5>/展場設計</h5>
+        <h5 id="paper-sub3">/展場設計</h5>
       </div>
       <div data-aos="fade-up" class="col-md-12 col-4">
         <img loading="lazy" src="../img/LC-8.webp">
       </div>
       <div data-aos="fade-right" class="col-4 col-md-12">
-        <h5>/網站UI設計</h5>
+        <h5 id="paper-sub4">/網站UI設計</h5>
       </div>
       <div data-aos="fade-up" class="col-md-5 col-4">
         <img loading="lazy" src="../img/LC-9.webp">
@@ -139,12 +139,12 @@
     <div class="row">
       <div class="col-2 col-md-1">
         <div>
-            <h5>設計團隊</h5>
+            <h5 id="design-team">設計團隊</h5>
         </div>
       </div>
       <div class="col-4 col-md-11">
         <div>
-            <p>PM \ 蘇妍樺<br>
+            <p id="paper-name">PM \ 蘇妍樺<br>
                標誌設計 \ 蘇妍樺、林品妘<br>
                輔助圖形設計 \ 李宸宇<br>
                標準字設計 \ 張芷藍、林倢如<br>
@@ -169,6 +169,7 @@
     </div>
   </div>
     <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>

@@ -29,8 +29,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -67,30 +67,29 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 offset-md-4 col-md-8">
         <div>
-            <h5>/Down Go 登山緊急救難網站 - 作品理念</h5>
+            <h5 id="downgoweb-title">/Down Go 登山緊急救難網站 - 作品理念</h5>
         </div>
         <div>
-            <p>作品延續登山須知與緊急自救的概念，將資訊整合至互動式網站，讓使用者透過遊戲化的體驗學習登山安全知識，並能直接選購相關裝備。</p> <br>
+            <p id="downgoweb-intro1">作品延續登山須知與緊急自救的概念，將資訊整合至互動式網站，讓使用者透過遊戲化的體驗學習登山安全知識，並能直接選購相關裝備。</p> <br>
             
-                <ul><p>前導頁：以打字動畫呈現網頁主旨，營造如同書籍前言般的閱讀體驗，為使用者建立沉浸式開場。</p></ul> <br>
-                <ul><p>
-首頁：結合滑鼠追蹤互動，讓主視覺產生細微動態變化，增強視覺吸引力，使使用者在探索時感受到流暢且富有層次的體驗。
+                <ul><p id="downgoweb-intro2">前導頁：以打字動畫呈現網頁主旨，營造如同書籍前言般的閱讀體驗，為使用者建立沉浸式開場。</p></ul> <br>
+                <ul><p id="downgoweb-intro3">首頁：結合滑鼠追蹤互動，讓主視覺產生細微動態變化，增強視覺吸引力，使使用者在探索時感受到流暢且富有層次的體驗。
                 </p></ul> <br>
-                <ul><p>登山前準備</p>
-                    <li><p>
+                <ul><p id="downgoweb-intro4">登山前準備</p>
+                    <li><p id="downgoweb-intro5">
                         登山裝備：設計分解式背包視覺，使用者可透過點擊不同分類，查看各層需要攜帶的裝備，直觀了解物品收納的邏輯。
                     </p></li>
-                    <li><p>受傷包紮：透過點擊框選擇受傷部位，進入後可進行簡單的包紮互動模擬，提供直觀的學習方式，強化應急處理能力。</p></li>
-                    <li><p>登山口選擇：設計多條登山路徑選擇，模擬不同的登山體驗，使用者可依照自身需求進入不同的資訊頁面。</p></li>
+                    <li><p id="downgoweb-intro6">受傷包紮：透過點擊框選擇受傷部位，進入後可進行簡單的包紮互動模擬，提供直觀的學習方式，強化應急處理能力。</p></li>
+                    <li><p id="downgoweb-intro7">登山口選擇：設計多條登山路徑選擇，模擬不同的登山體驗，使用者可依照自身需求進入不同的資訊頁面。</p></li>
                 </ul> <br>
-                <ul><p>登山危險須知</p>
-                    <li><p>透過滑動或點擊「前進」/「逃跑」的按鈕模擬登山過程，隨著高度變化，對應顯示各海拔可能遭遇的危險情境。</p></li>
-                    <li><p>點擊不同的「怪物」(象徵登山潛在風險)，左下角的資訊框將顯示該環境危險因素的詳細說明，提升使用者的風險意識與判斷能力。</p></li>
+                <ul><p id="downgoweb-intro8">登山危險須知</p>
+                    <li><p id="downgoweb-intro9">透過滑動或點擊「前進」/「逃跑」的按鈕模擬登山過程，隨著高度變化，對應顯示各海拔可能遭遇的危險情境。</p></li>
+                    <li><p id="downgoweb-intro10">點擊不同的「怪物」(象徵登山潛在風險)，左下角的資訊框將顯示該環境危險因素的詳細說明，提升使用者的風險意識與判斷能力。</p></li>
                 </ul> <br>
-                <ul><p>購物頁面</p>
-                    <li><p>整合互動式設計，讓使用者能夠在學習登山須知的同時，直接購買所需裝備，打造完整的登山安全資訊與裝備選購體驗。</p></li>
+                <ul><p id="downgoweb-intro11">購物頁面</p>
+                    <li><p id="downgoweb-intro12">整合互動式設計，讓使用者能夠在學習登山須知的同時，直接購買所需裝備，打造完整的登山安全資訊與裝備選購體驗。</p></li>
                 </ul> <br>
-            <p>網站透過沉浸式的互動設計，讓使用者不僅能夠學習登山安全與自救方法，更能透過遊戲化的方式提高參與度，使資訊傳遞更具吸引力與趣味性。同時，結合購物功能，創造從學習到實踐的完整體驗，提升網站的實用性與價值。</p>
+            <p id="downgoweb-intro13">網站透過沉浸式的互動設計，讓使用者不僅能夠學習登山安全與自救方法，更能透過遊戲化的方式提高參與度，使資訊傳遞更具吸引力與趣味性。同時，結合購物功能，創造從學習到實踐的完整體驗，提升網站的實用性與價值。</p>
         </div>
       </div>
     </div>
@@ -102,7 +101,7 @@
   <div class="container">
     <div class="row">
         <div data-aos="fade-right" class="col-4 col-md-12">
-            <h5>/UI展示</h5>
+            <h5 id="downgoweb-sub">/UI展示</h5>
         </div>
       <video data-aos="fade-up" class="col-4 col-md-12" controls>
           <source src="../img/downgo.mp4" type="video/mp4">
@@ -110,7 +109,7 @@
       </video>
       <div data-aos="fade-up" class="col-4 col-md-12 arrow">
         <a href="https://yujie67883.github.io/DownGo.github.io/prelude.html">
-        <h5>網站連結</h5>
+        <h5 id="downgoweb-link">網站連結</h5>
         <img loading="lazy" class="arrow" src="../img/arrow-right.svg">
       </a>
       </div>
@@ -124,12 +123,12 @@
     <div class="row">
       <div class="col-2 col-md-1">
         <div>
-            <h5>設計團隊</h5>
+            <h5 id="design-team">設計團隊</h5>
         </div>
       </div>
       <div class="col-4 col-md-11">
         <div>
-            <p>互動方式 \ 吳怡靜、蘇妍樺、陳妤婕、李宸宇<br>
+            <p id="downgoweb-name">互動方式 \ 吳怡靜、蘇妍樺、陳妤婕、李宸宇<br>
                 UI設計 \ 吳怡靜、蘇妍樺、陳妤婕<br>
                 前端 \ 蘇妍樺、陳妤婕
             </p>
@@ -151,6 +150,7 @@
     </div>
   </div>
     <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>

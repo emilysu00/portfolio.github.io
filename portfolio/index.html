@@ -37,8 +37,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -239,6 +239,14 @@
     </div>
     <div class="work">
     <div id="work-left">
+      <a href="./pages/works/book.html">
+        <div data-aos="fade-up">
+      <div class="items text-center">
+        <p id="work7">Cipher 書籍裝幀設計</p>
+        <img loading="lazy" src="./img/book.webp">
+      </div>
+    </div>
+      </a>
       <a href="./pages/works/ticket.html">
         <div data-aos="fade-up">
       <div class="items text-center">
@@ -252,14 +260,6 @@
       <div class="items text-center">
         <p id="work2">浪花體</p>
         <img loading="lazy" src="./img/font.webp">
-        </div>
-    </div>
-      </a>
-      <a href="./pages/works/longchen.html">
-        <div data-aos="fade-up">
-      <div class="items text-center">
-        <p id="work3">榮成紙業 CIS</p>
-        <img loading="lazy" src="./img/cis.webp">
         </div>
     </div>
       </a>
@@ -289,12 +289,12 @@
       </div>
     </div>
       </a>
-      <a href="./pages/works/book.html">
+      <a href="./pages/works/longchen.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work7">Cipher 書籍裝幀設計</p>
-        <img loading="lazy" src="./img/book.webp">
-      </div>
+        <p id="work3">榮成紙業 CIS</p>
+        <img loading="lazy" src="./img/cis.webp">
+        </div>
     </div>
       </a>
       <a href="./pages/works/flower.html">
@@ -343,6 +343,7 @@
   </div>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>

@@ -29,8 +29,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -67,10 +67,10 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 offset-md-4 col-md-8">
         <div>
-            <h5>/光孚影展延伸設計 - 作品理念</h5>
+            <h5 id="ticket-title">/光孚影展延伸設計 - 作品理念</h5>
         </div>
         <div>
-            <p>延續主視覺風格，以黑金為主色系，營造低調奢華的質感，讓參與講座的觀眾在拿到票券時，能夠感受到尊貴與被重視的儀式感。希望透過細膩的設計細節，不僅提升票券的收藏價值，也強化整體活動的品牌形象與專業度。<br>此外，針對不同期的講座主題設計了對應的專屬圖樣與視覺元素，確保每張票券不僅具有一致性的品牌識別，同時也能展現主題特色，使參與者能在視覺上直觀感受到當期講座的核心概念。<br>同時，識別證的設計也在此視覺語言的延伸中，保持了黑金主色系與精緻的設計語彙，使每一位參與者佩戴識別證時，能夠更加融入活動氛圍，並感受到獨特的品牌價值。識別證的設計與票券相呼應，強調一致性與專業感，進一步提升整體活動的質感與統一性。</p>
+            <p id="ticket-intro">延續主視覺風格，以黑金為主色系，營造低調奢華的質感，讓參與講座的觀眾在拿到票券時，能夠感受到尊貴與被重視的儀式感。希望透過細膩的設計細節，不僅提升票券的收藏價值，也強化整體活動的品牌形象與專業度。<br>此外，針對不同期的講座主題設計了對應的專屬圖樣與視覺元素，確保每張票券不僅具有一致性的品牌識別，同時也能展現主題特色，使參與者能在視覺上直觀感受到當期講座的核心概念。<br>同時，識別證的設計也在此視覺語言的延伸中，保持了黑金主色系與精緻的設計語彙，使每一位參與者佩戴識別證時，能夠更加融入活動氛圍，並感受到獨特的品牌價值。識別證的設計與票券相呼應，強調一致性與專業感，進一步提升整體活動的質感與統一性。</p>
         </div>
       </div>
     </div>
@@ -103,12 +103,12 @@
     <div class="row">
       <div class="col-2 col-md-1">
         <div>
-            <h5>設計團隊</h5>
+            <h5 id="design-team">設計團隊</h5>
         </div>
       </div>
       <div class="col-4 col-md-11">
         <div>
-            <p>視覺設計 \ 蘇妍樺</p>
+            <p id="ticket-name">視覺設計 \ 蘇妍樺</p>
         </div>
       </div>
     </div>
@@ -128,6 +128,7 @@
     </div>
   </div>
     <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>

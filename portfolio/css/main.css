@@ -364,7 +364,7 @@ p {
 .language {
   top: 3vh;
 }
-.en,
+#en,
 .dark {
   border: 1px solid var(--white);
   border-radius: 20px;
@@ -372,6 +372,15 @@ p {
   margin-bottom: 0.3rem;
   display: block;
   width: fit-content;
+}
+.en button {
+  background: none;
+  color: var(--white);
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 10%;
+  line-height: 180%;
 }
 .nav-item {
   padding: 0.3rem 0px;

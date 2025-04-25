@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 設置 hover 事件效果
   const hoverElements = document.querySelectorAll(
-    ".nav-item a, .en a, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img"
+    ".nav-item a, .en button, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img"
   );
 
   hoverElements.forEach((element) => {

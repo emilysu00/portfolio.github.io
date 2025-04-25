@@ -30,8 +30,8 @@
     <!--nav-->
 <section class="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start">
-        <!-- <a class="en" href="#">en</a> -->
+    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+        <button id="en" onclick="loadSheetData()">en</button>
         <!-- <a class="dark" href="#">dark</a> -->
     </div>
     <div class="row">
@@ -64,10 +64,10 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 offset-md-4 col-md-8">
         <div>
-            <h5>/台北捷運Go - 捷運通勤APP 再設計專案</h5>
+            <h5 id="metro-title">/台北捷運Go - 捷運通勤APP 再設計專案</h5>
         </div>
         <div>
-            <p>台北捷運Go 是官方提供的行程規劃工具，但為何資訊最正確的 App，卻不是大多數人的首選？本專案透過雙鑽模型設計思考流程，分析使用者需求並優化體驗。</p>
+            <p id="metro-intro1">台北捷運Go 是官方提供的行程規劃工具，但為何資訊最正確的 App，卻不是大多數人的首選？本專案透過雙鑽模型設計思考流程，分析使用者需求並優化體驗。</p>
         </div>
       </div>
     </div>
@@ -80,8 +80,8 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 col-md-12 margin-top-30">
         <div>
-            <h5 class="bold">/問題探索</h5>
-            <p id="research-caption">在研究初期的階段，我們先是進行了量化問卷調查，在不同通勤族群中（學生、社群的捷運愛好者社團、上班族等等）</p>
+            <h5 id="metro-sub1" class="bold">/問題探索</h5>
+            <p itemid="metro-intro2" id="research-caption">在研究初期的階段，我們先是進行了量化問卷調查，在不同通勤族群中（學生、社群的捷運愛好者社團、上班族等等）</p>
         </div>
       </div>
       <div data-aos="fade-up" class="col-4 col-md-4">
@@ -91,7 +91,7 @@
             <p id="user"><span class="high-light">46</span>位台北捷運Go APP 的現有使用者</p>
       </div>
       <div data-aos="fade-up" class="col-4 col-md-4 blue">
-            <p><span class="high-light">10</span>位使用者訪談</p>
+            <p id="metro-intro5"><span class="high-light">10</span>位使用者訪談</p>
       </div>
     </div> 
   </div>
@@ -103,7 +103,7 @@
     <div class="row">
         <div data-aos="fade-right" class="col-4 col-md-12 margin-top-30">
             <h5>/Persona / User Journey Map</h5>
-            <p>為了讓團隊能夠更精準的分析目標客群的行為及需求，並挖掘其中的機會點，我們將十位受訪者的訪談結果收斂出使用者輪廓，並整理出人物誌。</p>
+            <p id="metro-intro6">為了讓團隊能夠更精準的分析目標客群的行為及需求，並挖掘其中的機會點，我們將十位受訪者的訪談結果收斂出使用者輪廓，並整理出人物誌。</p>
         </div>
         <div data-aos="fade-up" class="col-4 col-md-6">
           <img loading="lazy" src="../img/metro/persona1.webp">
@@ -112,72 +112,72 @@
           <img loading="lazy" src="../img/metro/persona2.webp">
         </div>
         <div data-aos="fade-right" class="col-4 col-md-12 persona-caption">
-            <p>我們以Persona 來展開使用者旅程地圖，將搭乘捷運的流程拆分成6點</p>
+            <p id="metro-intro7">我們以Persona 來展開使用者旅程地圖，將搭乘捷運的流程拆分成6點</p>
         </div>
         <div class="col-4 col-md-12 motive-row">
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>1</p>
-              <h5 class="bold">確認班次動態<br>以及行程</h5>
+              <h5 id="metro-intro8" class="bold">確認班次動態<br>以及行程</h5>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>2</p>
-              <h5 class="bold">前往捷運站 / 進站<br>（確認搭車位置）</h5>
+              <h5 id="metro-intro9" class="bold">前往捷運站 / 進站<br>（確認搭車位置）</h5>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>3</p>
-              <h5 class="bold">等待時<br>查詢列車動態</h5> 
+              <h5 id="metro-intro10" class="bold">等待時<br>查詢列車動態</h5> 
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>4</p>
-              <h5 class="bold">乘車過程中<br>確認列車動態 / 等待到站</h5>
+              <h5 id="metro-intro11" class="bold">乘車過程中<br>確認列車動態 / 等待到站</h5>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>5</p>
-              <h5 class="bold">確認轉乘<br>位置及時間</h5>
+              <h5 id="metro-intro12" class="bold">確認轉乘<br>位置及時間</h5>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-2 col-2 text-center sqaure">
             <div class="inner-motive">
               <p>6</p>
-              <h5 class="bold">抵達站點 / 出站<br>前往目的地</h5>
+              <h5 id="metro-intro13" class="bold">抵達站點 / 出站<br>前往目的地</h5>
             </div>
         </div>
         </div>
         <div data-aos="fade-right" class="col-4 col-md-12 persona-caption">
-            <p>透過對十位受訪者答案的梳理和歸納，整理出<span class="bold">使用者旅程地圖</span>，目標在其中找出各階段會發生的痛點並帶領團隊找出切入點。</p>
+            <p id="metro-intro14">透過對十位受訪者答案的梳理和歸納，整理出<span class="bold">使用者旅程地圖</span>，目標在其中找出各階段會發生的痛點並帶領團隊找出切入點。</p>
         </div>
         <div data-aos="fade-up" class="col-4 col-md-12">
           <img loading="lazy" src="../img/metro/3.webp">
         </div>
         <div data-aos="fade-right" class="col-4 col-md-12 persona-caption margin-top-30">
-            <p>最後，透過使用者旅程提供的訊息，我們找出了出現<span class="bold">最多痛點及期待的三個階段</span>：</p>
+            <p id="metro-intro15">最後，透過使用者旅程提供的訊息，我們找出了出現<span class="bold">最多痛點及期待的三個階段</span>：</p>
         </div>
         <div class="col-4 col-md-12 motive-row user-row">
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive">
-              <h4 class="bold">確認班次動態及行程</h4>
-              <p>1. 查詢票價及規劃旅程時間<br>2. 規劃捷運站周邊景點或轉乘資訊<br>3. 無法規劃行程轉而打開google map</p>
+              <h4 id="metro-intro16" class="bold">確認班次動態及行程</h4>
+              <p id="metro-intro17">1. 查詢票價及規劃旅程時間<br>2. 規劃捷運站周邊景點或轉乘資訊<br>3. 無法規劃行程轉而打開google map</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive">
-              <h4 class="bold">等待時查詢列車動態</h4>
-              <p>1. 希望找到人少的閘門<br>2. 準確的到站、搭乘時間確保可以行程順利<br>3. 想知道哪個車廂的出口會離手扶梯最近</p>
+              <h4 id="metro-intro18" class="bold">等待時查詢列車動態</h4>
+              <p id="metro-intro19">1. 希望找到人少的閘門<br>2. 準確的到站、搭乘時間確保可以行程順利<br>3. 想知道哪個車廂的出口會離手扶梯最近</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive">
-              <h4 class="bold">乘車過程確認列車動態& 等待到站</h4>
-              <p>1. 無法確定目前位置或剩餘搭乘時間導致緊張<br>2. 跑馬燈資訊過多或被遮擋無法看到想看的資訊<br>3. 廣播聲因車廂吵雜而聽不清楚</p>
+              <h4 id="metro-intro20" class="bold">乘車過程確認列車動態& 等待到站</h4>
+              <p id="metro-intro21">1. 無法確定目前位置或剩餘搭乘時間導致緊張<br>2. 跑馬燈資訊過多或被遮擋無法看到想看的資訊<br>3. 廣播聲因車廂吵雜而聽不清楚</p>
             </div>
         </div>
       </div>
@@ -194,42 +194,42 @@
     <div class="row">
       <div data-aos="fade-left" class="col-4 col-md-12 margin-top-30">
         <div>
-            <h5 class="bold">/親合圖收斂</h5>
+            <h5 id="metro-sub2" class="bold">/親合圖收斂</h5>
         </div>
       </div>
       <div class="col-4 col-md-3">
         <div data-aos="fade-up" class="motive text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">最有效率的完成行程</h4>
-              <p>讓用戶能清楚掌握準確且完整的班次和時間，<br>節省操作時間成本</p>
+              <h4 id="metro-intro22" class="bold">最有效率的完成行程</h4>
+              <p id="metro-intro23">讓用戶能清楚掌握準確且完整的班次和時間，<br>節省操作時間成本</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">直覺的介面</h4>
-              <p>不過於複雜且直覺的介面，<br>讓用戶能夠快速找到需要的資訊</p>
+              <h4 id="metro-intro24" class="bold">直覺的介面</h4>
+              <p id="metro-intro25">不過於複雜且直覺的介面，<br>讓用戶能夠快速找到需要的資訊</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">安心搭乘體驗</h4>
-              <p>減少用戶搭乘捷運時，資訊不清<br>（例：到站資訊、列車時刻）而造成的不安感</p>
+              <h4 id="metro-intro26" class="bold">安心搭乘體驗</h4>
+              <p id="metro-intro27">減少用戶搭乘捷運時，資訊不清<br>（例：到站資訊、列車時刻）而造成的不安感</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">使用者成就感</h4>
-              <p>優惠券、回饋金以及<br>里程累積成就感的吸引力</p>
+              <h4 class="bold" id="metro-intro28">使用者成就感</h4>
+              <p id="metro-intro29">優惠券、回饋金以及<br>里程累積成就感的吸引力</p>
             </div>
         </div>
       </div>
       <div data-aos="fade-left" class="col-4 col-md-9" id="painpoint">
           <img loading="lazy" src="../img/metro/5.webp">
       </div>
-      <div data-aos="fade-up" data-aos-offset="800" class="col-4 col-md-12 text-center" id="HMW">
+      <div data-aos="fade-up" data-aos-offset="500" class="col-4 col-md-12 text-center" id="HMW">
         <div>
             <p>How Might We</p>
-            <h3 class="bold blue">我們如何透過建立直覺的資訊服務以提升行程效率？</h3>
+            <h3 id="metro-intro30" class="bold blue">我們如何透過建立直覺的資訊服務以提升行程效率？</h3>
         </div>
       </div>
     </div>
@@ -243,44 +243,44 @@
       <div data-aos="fade-left" class="col-4 col-md-12">
         <div>
             <h5 class="bold">/Brainstorming</h5>
-            <p>在確立目標後，團隊以 HMW 問題導向為發想，提出多種可能的解決方案，最終聚焦於三大設計策略：</p>
+            <p id="metro-intro31">在確立目標後，團隊以 HMW 問題導向為發想，提出多種可能的解決方案，最終聚焦於三大設計策略：</p>
         </div>
         <div class="col-4 col-md-9 motive-row justify brainstorm-row">
         <div data-aos="fade-up" class="motive col-md-4 col-3 text-center">
             <div class="inner-motive">
-              <h5 class="bold">提升功能可見性</h5>
-              <p>優化導覽流程與首頁資訊架構，<br>使核心功能更直覺易用。</p>
+              <h5 class="bold" id="metro-intro32">提升功能可見性</h5>
+              <p id="metro-intro33">優化導覽流程與首頁資訊架構，<br>使核心功能更直覺易用。</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-3 text-center">
             <div class="inner-motive">
-              <h5 class="bold">強化資訊優先層級</h5>
-              <p>重新規劃頁面資訊放置位置並整合功能，<br>減少用戶切換頁面的負擔。</p>
+              <h5 class="bold" id="metro-intro34">強化資訊優先層級</h5>
+              <p id="metro-intro35">重新規劃頁面資訊放置位置並整合功能，<br>減少用戶切換頁面的負擔。</p>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-3 text-center">
             <div class="inner-motive">
-              <h5 class="bold">更新 UI 設計</h5>
-              <p>優化介面色彩配置與元件設計，讓整體<br>使用體驗更流暢，同時符合通用設計原則。</p>
+              <h5 class="bold" id="metro-intro36">更新 UI 設計</h5>
+              <p id="metro-intro37">優化介面色彩配置與元件設計，讓整體<br>使用體驗更流暢，同時符合通用設計原則。</p>
             </div>
         </div>
       </div>
       <div data-aos="fade-up"class="col-4 col-md-12 persona-caption">
         <div>
-            <p>此外，針對通勤族的實際需求，我們新增兩項關鍵功能，以進一步提升使用體驗：</p>
+            <p id="metro-intro38">此外，針對通勤族的實際需求，我們新增兩項關鍵功能，以進一步提升使用體驗：</p>
         </div>
       </div>
      <div class="col-4 col-md-10  offset-md-1 motive-row">
         <div data-aos="fade-left" class="motive col-md-6 col-4 text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">路線規劃功能</h4>
-              <p>在參考競品分析後，我們新增了 Google Maps 串接，<br>讓用戶可以在 App 內直接規劃更細節的行程，<br>不僅限於捷運站點，提升整體實用性。</p>
+              <h4 class="bold" id="metro-intro39">路線規劃功能</h4>
+              <p id="metro-intro40">在參考競品分析後，我們新增了 Google Maps 串接，<br>讓用戶可以在 App 內直接規劃更細節的行程，<br>不僅限於捷運站點，提升整體實用性。</p>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-6 col-4 text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">即時動態功能</h4>
-              <p>透過即時顯示 列車位置、出發與抵達時間，讓乘客能夠更安心掌握行程變化。<br>此外，該功能還可與 手機 Widget 小工具連動，<br>讓用戶能更快速地在主畫面查看即時資訊，減少點擊層級。</p>
+              <h4 class="bold" id="metro-intro41">即時動態功能</h4>
+              <p id="metro-intro42">透過即時顯示 列車位置、出發與抵達時間，讓乘客能夠更安心掌握行程變化。<br>此外，該功能還可與 手機 Widget 小工具連動，<br>讓用戶能更快速地在主畫面查看即時資訊，減少點擊層級。</p>
             </div>
         </div>
       </div>
@@ -294,7 +294,7 @@
   <div class="container">
     <div class="row">
         <div data-aos="fade-right" class="col-4 col-md-12 margin-top-30">
-            <h5>/初版設計</h5>
+            <h5 id="metro-sub3">/初版設計</h5>
         </div>
         <video controls class="col-md-3 offset-md-3 col-4 metro-ui" autoplay loop muted playsinline>
           <source src="../img/metro/1.mp4" type="video/mp4">
@@ -313,37 +313,38 @@
   <div class="container">
     <div class="row">
       <div data-aos="fade-left" class="col-4 col-md-6 test1 margin-top-30">
-            <h5 class="bold">/易用性測試</h5>
-            <p>在進行初次介面設計後，我們透過 易用性測試（Usability Testing） 來驗證設計成效。</p>
-            <p>共<span class="high-light text-center">5</span>位受測者</p>
+            <h5 id="metro-sub4" class="bold">/易用性測試</h5>
+            <p id="metro-intro43">在進行初次介面設計後，我們透過 易用性測試 
+              來驗證設計成效。</p>
+            <p id="metro-intro58">共<span class="high-light text-center">5</span>位受測者</p>
       </div>
      <div class="col-4 col-md-6 margin-top-30">
         <div data-aos="fade-left" class="motive col-md-12 col-4 text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">任務一</h4>
-              <p>你今天在網路上看到一場超有趣的展覽，地點就在北師美術館！但這是你第一次去那裡，對位置完全沒概念，不知道該怎麼搭捷運最方便。為了確保自己不會迷路，你打開台北捷運GO，希望找到花費時間最短的路線，並且順利把路線資訊加入規劃，讓自己出門時更安心！</p>
+              <h4 class="bold" id="metro-intro44">任務一</h4>
+              <p id="metro-intro45">你今天在網路上看到一場超有趣的展覽，地點就在北師美術館！但這是你第一次去那裡，對位置完全沒概念，不知道該怎麼搭捷運最方便。為了確保自己不會迷路，你打開台北捷運GO，希望找到花費時間最短的路線，並且順利把路線資訊加入規劃，讓自己出門時更安心！</p>
             </div>
         </div>
         <div data-aos="fade-left" class="motive col-md-12 col-4 text-center sqaure">
             <div class="inner-motive">
-              <h4 class="bold">任務二</h4>
-              <p>你住在捷運府中站附近，今天和朋友約好要去西門町玩，所以需要先規劃好路線。在車廂內，你想知道還有多久會抵達目的地，查看行程的即時狀況，順便設定一個10分鐘前到站提醒，讓自己可以安心閉眼休息，不怕坐過站！</p>
+              <h4 class="bold" id="metro-intro46">任務二</h4>
+              <p id="metro-intro47">你住在捷運府中站附近，今天和朋友約好要去西門町玩，所以需要先規劃好路線。在車廂內，你想知道還有多久會抵達目的地，查看行程的即時狀況，順便設定一個10分鐘前到站提醒，讓自己可以安心閉眼休息，不怕坐過站！</p>
             </div>
         </div>
       </div>
       <div data-aos="fade-left" class="col-4 col-md-12 text-center sus">
-        <p>在初步的易用性測試中，我們的分數略低於業界平均標準 68 分。</p>
+        <p id="metro-intro48">在初步的易用性測試中，我們的分數略低於業界平均標準 68 分。</p>
         <h5>SUS<span class="high-light">66.25</span> </h5>
       </div>
       <div data-aos="fade-left" class="col-4 col-md-5">
-            <h5 class="bold">/問題假設</h5>
-            <p>在測試過程中觀察到兩個主要痛點：</p>
-            <p>1. 使用者在點選「路線」Tab 時，<span class="bold">預期會看到地圖介面</span>，而非捷運路線圖，導致認知落差。<br>2. 在執行任務時，使用者對畫面上方的 Segmented Control <span class="bold">不夠顯眼</span>，需要額外時間探索與理解，增加了操作上的猶豫與時間成本。</p> <br>
-            <h5 class="bold">設計目標 : 將 SUS 分數提升至 <span class="bold">68</span>分以上</h5>
+            <h5 class="bold" id="metro-sub5">/問題假設</h5>
+            <p id="metro-intro49">在測試過程中觀察到兩個主要痛點：</p>
+            <p id="metro-intro50">1. 使用者在點選「路線」Tab 時，<span class="bold">預期會看到地圖介面</span>，而非捷運路線圖，導致認知落差。<br>2. 在執行任務時，使用者對畫面上方的 Segmented Control <span class="bold">不夠顯眼</span>，需要額外時間探索與理解，增加了操作上的猶豫與時間成本。</p> <br>
+            <h5 id="metro-intro51" class="bold">設計目標 : 將 SUS 分數提升至 <span class="bold">68</span>分以上</h5>
       </div>
       <div data-aos="fade-left" class="col-4 col-md-6 offset-md-1">
             <h5 class="bold">/A/B Testing</h5>
-            <p>為解決上述問題，我們將原本的「路線」Tab <span class="bold">拆分為「路線規劃」與「捷運路線」兩個獨立入口</span>，以強化資訊架構的可理解性，並減少使用者的預期錯誤。<br>我們根據此改版製作 A/B 版本進行比對測試，並重新招募受試者執行相同任務，以驗證改版對易用性與效率的影響。</p>
+            <p id="metro-intro52">為解決上述問題，我們將原本的「路線」Tab <span class="bold">拆分為「路線規劃」與「捷運路線」兩個獨立入口</span>，以強化資訊架構的可理解性，並減少使用者的預期錯誤。<br>我們根據此改版製作 A/B 版本進行比對測試，並重新招募受試者執行相同任務，以驗證改版對易用性與效率的影響。</p>
       </div>
       <!-- <div data-aos="fade-left" class="col-4 col-md-6 offset-md-1">
             <h5 class="bold">/設計目標</h5>
@@ -358,7 +359,7 @@
   <div class="container">
     <div class="row">
         <div data-aos="fade-right" class="col-4 col-md-12 margin-top-30">
-            <h5>/更新設計</h5>
+            <h5 id="metro-sub6">/更新設計</h5>
         </div>
         <video controls class="col-md-3 offset-md-4 col-4 metro-ui" autoplay loop muted playsinline>
           <source src="../img/metro/3.mp4" type="video/mp4">
@@ -373,29 +374,29 @@
   <div class="container">
     <div class="row">
       <div data-aos="fade-up" class="col-4 col-md-12 justify margin-top-30">
-            <h5 class="bold">/設計優化成果</h5>
-            <p>經過設計調整後，我們重新進行易用性測試（共招募 5 位受試者），在新版本中觀察到以下改善成效：</p>
+            <h5 id="metro-sub7" class="bold">/設計優化成果</h5>
+            <p id="metro-intro53">經過設計調整後，我們重新進行易用性測試（共招募 5 位受試者），在新版本中觀察到以下改善成效：</p>
       </div>
       <div class="col-4 col-md-12 motive-row">
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive blue">
               <p class="high-light">83.5</p>
-              <h5>SUS 分數由 66.25 分提升至 83.5 分，<br>超過業界平均標準（68 分）</h5>
+              <h5 id="metro-intro54">SUS 分數由 66.25 分提升至 83.5 分，<br>超過業界平均標準（68 分）</h5>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive">
-              <h5>使用者對於路線Tab 的理解與預期<br>一致性顯著提升</h5>
+              <h5 id="metro-intro55">使用者對於路線Tab 的理解與預期<br>一致性顯著提升</h5>
             </div>
         </div>
         <div data-aos="fade-up" class="motive col-md-4 col-4 text-center">
             <div class="inner-motive">
-              <h5>受試者普遍反映「界面更清楚」、<br>「更容易找到自己想要的功能」</h5>
+              <h5 id="metro-intro56">受試者普遍反映「界面更清楚」、<br>「更容易找到自己想要的功能」</h5>
             </div>
         </div>
       </div>
       <div data-aos="fade-up" class="col-4 col-md-12 justify">
-            <p>透過改版後的 A/B 測試結果，我們驗證了分離 Tab 的設計能有效降低使用者的操作負擔，並提高介面理解度，達成了設定的易用性改善目標。</p>
+            <p id="metro-intro57">透過改版後的 A/B 測試結果，我們驗證了分離 Tab 的設計能有效降低使用者的操作負擔，並提高介面理解度，達成了設定的易用性改善目標。</p>
       </div>
     </div>
   </div>
@@ -408,12 +409,12 @@
     <div class="row">
       <div class="col-2 col-md-1">
         <div>
-            <h5>設計團隊</h5>
+            <h5 id="design-team">設計團隊</h5>
         </div>
       </div>
       <div class="col-4 col-md-11">
         <div>
-            <p>UX研究 \ 蘇妍樺、陳姿璇、管若琳<br>
+            <p id="metro-name">UX研究 \ 蘇妍樺、陳姿璇、管若琳<br>
               UI設計 \ 蘇妍樺、陳姿璇<br>
                 動畫設計 \ 管若琳
             </p>
@@ -435,6 +436,7 @@
     </div>
   </div>
     <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/en.js"></script>
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
