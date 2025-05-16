@@ -6,6 +6,40 @@
     margin: 45vh 0vw 50vh 20vw;
   }
 }
+/* 
+#home {
+  position: relative;
+}
+#home .img img {
+  width: 70vw;
+  height: auto;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s ease-out, transform 1.2s ease-out;
+}
+#home .img img.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+#home .img {
+  display: flex;
+  margin-left: -2vw;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; 
+}
+#home h2 {
+  margin: 0vh 0vw 15vh 0vw;
+  font-family: "Abhaya Libre";
+} */
+
+/* RWD 下的 margin 設定 */
+@media (max-width: 768px) {
+  #home h2 {
+    margin: 0vh 0vw 50vh 20vw;
+  }
+}
 
 /* about */
 #about .row {

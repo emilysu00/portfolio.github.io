@@ -131,3 +131,12 @@ console.log("goTop script loaded");
 //     document.body.style.mixBlendMode = "normal"; // 在 light 模式下使用 normal 混合模式
 //   }
 // });
+
+//main 圖片浮現
+window.addEventListener("DOMContentLoaded", () => {
+  const img = document.querySelector("#home .img img");
+  // 加一點延遲也可以讓畫面更柔和
+  setTimeout(() => {
+    img.classList.add("fade-in");
+  }, 600);
+});
