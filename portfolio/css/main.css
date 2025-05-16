@@ -1,5 +1,5 @@
 :root {
-  --blue: #0056eb;
+  --blue: rgb(50, 125, 255);
   --white: #fafafa;
   --black: #222222;
 }
@@ -38,12 +38,12 @@ body h4 {
 body a {
   color: var(--black);
 }
-/* body.dark-mode a {
+body.dark-mode a {
   color: var(--white);
 }
 body.dark-mode .arrow-path {
-  stroke: var(--white); 
-} */
+  stroke: var(--white);
+}
 .forpc {
   display: block;
 }
