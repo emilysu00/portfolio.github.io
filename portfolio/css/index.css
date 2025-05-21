@@ -37,7 +37,7 @@
 /* RWD 下的 margin 設定 */
 @media (max-width: 768px) {
   #home h2 {
-    margin: 0vh 0vw 50vh 20vw;
+    margin: 40vh 0vw 50vh 20vw;
   }
 }
 
