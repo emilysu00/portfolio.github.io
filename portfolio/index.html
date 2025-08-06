@@ -35,62 +35,53 @@
     </div>
 
     <!--nav-->
-<section class="nav">
+<section id="nav">
   <div class="container">
-    <div data-aos="fade-right" class="row language col-4 col-md-12 text-start en">
+    <div class="language text-start en">
         <button id="en" onclick="loadSheetData()">en</button>
     </div>
-    <div class="row">
-      <div data-aos="fade-left" class="col-4 col-md-12 text-end">
-        <ul class="nav-links" >
-        <li class="nav-item"><a href="#home">/home</a></li>
-        <li class="nav-item"><a href="#about">/about</a></li>
-        <li class="nav-item"><a href="#projects">/projects</a></li>
-        <li class="nav-item"><a href="#works">/works</a></li>
-        <!-- <li class="nav-item"><a href="#articles">/articles</a></li> -->
-      </ul>
+      <div class="text-end nav-links">
+        <a class="nav-item" href="#exp">exp</a>
+        <a class="nav-item" href="#projects">projects</a>
+        <a class="nav-item" href="#works">works</a>
       </div>
-    </div>
   </div>
 </section>
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
       <div class="canvas-container forpc">
         <canvas id="canvas"></canvas>
       </div>
     </div>
-</div>
+</div> -->
 
 <!--home-->
-<section id="home"  data-aos="fade-right">
-  <!-- <div class="img">
-    <img loading="lazy" src="./img/main.webp">
-  </div> -->
+<!-- <section id="home"  data-aos="fade-right">
   <div class="col-md-12">
     <h2>SU YENHUA</h2>
   </div>
-</section>
+</section> -->
 
 <!--about-->
 <section id="about">
   <div class="container">
     <div class="row">
-      <div data-aos="fade-right" class="col-4 col-md-7">
+      <div id="self-protrait-pc" class="offset-md-1 col-md-5">
+        <img class="forpc" loading="lazy" src="./img/me1.png">
+      </div>
+        <div id="self-protrait-phone">
+          <img class="forphone col-4" loading="lazy" src="./img/me1.png">
+        </div>
+      <div data-aos="fade-left" class="col-4">
         <div>
-        <h4>/about me</h4>
+          <h2>SU<br>YEN HUA</h2>
+        </div>
       </div>
-      <div id="self-protrait-phone">
-        <img class="forphone col-4" loading="lazy" src="./img/me1.webp">
-      </div>
-      <div>
-        <p id="self-intro">我叫蘇妍樺，目前就讀臺灣藝術大學視覺傳達設計學系，專注於視覺設計與UI/UX領域，擅長從使用者需求出發，整合設計思維與美感表達，打造具備邏輯性與情感連結的數位體驗。<br> <br>在學期間參與多項團隊合作與跨領域專案，具備良好的專案統籌與溝通協作能力。曾擔任班展總召與系學會幹部，具備規劃大型活動與設計輸出流程的實務經驗，亦具備撰寫簡報、進度管理與對外提案的能力。在UIUX設計方面，熟悉使用者研究、流程規劃、資訊架構與Figma等工具，能從前期研究到視覺設計完整參與專案流程。<br> <br>設計對我而言不只是美學的實踐，更是解決問題與創造價值的方法。透過觀察、理解與轉譯，我致力於將抽象的概念轉化為具體且有效的視覺表達，讓使用者與設計之間產生真實連結。</p>
-      </div>
-      </div>
-      <di data-aos="fade-left" id="self-protrait-pc" class="col-md-2 offset-md-1">
-        <img class="forpc" loading="lazy" src="./img/me1.webp">
-      </div>
+      <div data-aos="fade-left" class="col-4 col-md-3">
+          <p id="self-intro">＃喜歡參與各種事物充實自己<br>＃領導整合、協作能力<br>＃樂於冒險與挑戰<br>＃臺灣藝術大學視覺傳達設計學系</p>
+        </div>
   </div>
 </section>
 
@@ -98,37 +89,37 @@
 <section id="exp">
     <div class="container">
     <div class="row">
-      <div data-aos="fade-right" class="col-md-2 col-4">
+      <div data-aos="fade-right" class="col-md-2 col-4 offset-md-1">
         <h4>/experiences</h4>
       </div>
-      <di class="col-md-9 offset-md-1 col-4 offset-0">
+      <di class="col-md-9 col-4">
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2023/12-2024/10</p>
+            <p>2023 Dec. - 2024 Oct.</p>
           </div>
           <div class="theme">
-            <p id="exp1">國立臺灣藝術大學 視傳系111級 班級展覽《異質空間 Heterotopia》總召</p>
+            <p id="exp1">臺藝大 視傳系111級 <br class="forphone">班級展覽《異質空間 Heterotopia》總召</p>
           </div>
         </div>
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2024/4-2025/3</p>
+            <p>2024 Apr. - 2025 Mar.</p>
           </div>
           <div class="theme">
-            <p id="exp2">國立臺灣藝術大學 視傳系111 級系學會 活動組組長</p>
+            <p id="exp2">臺藝大 視傳系111 級系學會 活動組組長</p>
           </div>
         </div>
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2024/6-2025/4</p>
+            <p>2024 Jun. - 2025 Apr.</p>
           </div>
           <div class="theme">
-            <p id="exp3">國立臺灣藝術大學 113年系展 公關組組長</p>
+            <p id="exp3">臺藝大 113年系展 公關組組長</p>
           </div>
         </div>
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2024/7-2025/6</p>
+            <p>2024 Jul. - 2025 .Jun</p>
           </div>
           <div class="theme">
             <p id="exp4">2024-2025年度 巨思媒體集團美術部門 實習生</p>
@@ -137,19 +128,28 @@
         </div>
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2024/11-2025/6</p>
+            <p>2024 Nov. - 2025 Jun.</p>
           </div>
           <div class="theme">
-            <p id="exp5">設計人雜誌52期 文字總編</p>
+            <p id="exp5">臺藝大 視傳系設計人雜誌52期 文字總編</p>
           </div>
           </a>
         </div>
         <div data-aos="fade-left" class="exp">
           <div class="date">
-            <p>2025/6-2026/6</p>
+            <p>2025 Jul. - 2025 Aug.</p>
           </div>
           <div class="theme">
-            <p id="exp6">國立臺灣藝術大學 視傳系111級 畢業展覽 副召</p>
+            <p id="exp6">孢子蒝設計工作室 設計實習生</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2025 Jun. - 2026 May</p>
+          </div>
+          <div class="theme">
+            <p id="exp7">臺藝大 視傳系111級 畢業展覽 副召</p>
           </div>
           </a>
         </div>
@@ -168,7 +168,7 @@
         <div data-aos="fade-up" class="col-md-4 col-4 pro">
           <a href="./pages/projects/metrogo.html">
             <div class="banner">
-              <img loading="lazy" src="./pages/img/metro/metro-bqnner.webp">
+              <img loading="lazy" src="./pages/img/metro/metro-bqnner.png">
             </div>
             <div class="name">
               <h5 id="pro-item1">台北捷運Go<br class="forphone"> 捷運通勤APP 再設計專案</h5>
@@ -179,10 +179,12 @@
             </div>
           </a>
         </div>
+      </div>
+      <div class="project-row col-4 col-md-12 text-end">
         <div data-aos="fade-up" class="col-md-4 col-4 pro">
           <a href="./pages/projects/treasure-old.html">
             <div class="banner">
-              <img loading="lazy" src="./pages/img/treasure/8.webp">
+              <img loading="lazy" src="./pages/img/treasure/8.png">
             </div>
             <div class="name">
               <h5 id="pro-item2">寶藏巖國際藝術村 品牌再造<br class="forphone">color (in/out) side</h5>
@@ -196,7 +198,7 @@
         <div data-aos="fade-up" class="col-md-4 col-4 pro">
           <a href="./pages/projects/treasure-new.html">
             <div class="banner">
-              <img loading="lazy" src="./pages/img/treasure/treasure-banner.webp">
+              <img loading="lazy" src="./pages/img/treasure/treasure-banner.png">
             </div>
             <div class="name">
               <h5 id="pro-item3">寶藏巖國際藝術村 品牌再造<br class="forphone">自力造物</h5>
@@ -208,21 +210,6 @@
           </a>
         </div> 
       </div>
-      <!-- <div class="project-row col-4 col-md-12">
-        <div data-aos="fade-up" class="col-md-4 col-4 pro">
-          <a href="#">
-            <div class="arrow text-end">
-              <img loading="lazy" src="./img/arrow-go.svg">
-            </div>
-            <div class="name">
-              <h5 id="pro-item4">清大校園區域創新CCL<br class="forphone">課程查詢介面設計專案</h5>
-            </div>
-            <div class="tag">
-              <p>#UIUX</p>
-            </div>
-          </a>
-        </div>
-      </div> -->
     </div>
   </div>
     
@@ -243,24 +230,25 @@
       <a href="./pages/works/book.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work7">Cipher 書籍裝幀設計</p>
         <img loading="lazy" src="./img/book.webp">
+        <p id="work7">Cipher 書籍裝幀設計</p>
       </div>
     </div>
       </a>
       <a href="./pages/works/ticket.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work1">光孚影展延伸設計</p>
         <img loading="lazy" src="./img/ticket.webp">
+        <p id="work1">光孚影展延伸設計</p>
       </div>
     </div>
       </a>
       <a href="./pages/works/font.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work2">浪花體</p>
         <img loading="lazy" src="./img/font.webp">
+        <p id="work2">浪花 字體設計</p>
+
         </div>
     </div>
       </a>
@@ -275,8 +263,8 @@
       <!-- <a href="./pages/works/flower.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work8">探花府 CIS / IP設計</p>
         <img loading="lazy" src="./img/banner.gif">
+        <p id="work8">探花府 CIS / IP設計</p>
       </div>
     </div>
       </a> -->
@@ -285,25 +273,26 @@
       <a href="./pages/works/downgo.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work5">Down Go 登山緊急救難手冊</p>
         <img loading="lazy" src="./img/downgo.webp">
+        <p id="work5">Down Go 登山緊急救難手冊</p>
       </div>
     </div>
       </a>
       <a href="./pages/works/downgoweb.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work6">Down Go 登山緊急救難網站</p>
         <img loading="lazy" src="./img/downgoweb.webp">
+        <p id="work6">Down Go 登山緊急救難網站</p>
+
       </div>
     </div>
       </a>
       <a href="./pages/works/longchen.html">
         <div data-aos="fade-up">
       <div class="items text-center">
-        <p id="work3">榮成紙業 CIS</p>
-        <img loading="lazy" src="./img/cis.webp">
-        </div>
+        <img loading="lazy" src="./img/lc.webp">
+        <p id="work3">榮成紙業 企業識別</p>
+      </div>
     </div>
       </a>
     </div>
@@ -332,7 +321,7 @@
 
 <!-- go top -->
 <button id="goTopBtn" class="go-top" aria-label="Go to top">
-  <img src="./img/gotop.svg" style="width: 60%; height: auto;">
+  <img src="./img/gotop.svg" style="width: 50%; height: auto;">
 </button>
 
 

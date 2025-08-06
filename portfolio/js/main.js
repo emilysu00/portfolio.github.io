@@ -57,6 +57,8 @@ objloader.load("./module/flowercombine.obj", (object) => {
   object.children[0].material = material1;
   object.scale.setScalar(3);
   object.position.set(0, -2, 0);
+  // const degToRad = (deg) => deg * (Math.PI / 180);
+  // object.rotation.set(degToRad(12), degToRad(0), degToRad(0));
   group.add(object);
 });
 

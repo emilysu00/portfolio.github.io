@@ -12,7 +12,7 @@
   vertical-align: middle;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 86, 235, 0.1);
+  border: 1px solid var(--blue);
   padding: 20px 20px 20px 20px;
   transition: all 0.3s ease;
 }

@@ -37,31 +37,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 設置 hover 事件效果
   const hoverElements = document.querySelectorAll(
-    ".nav-item a, .en button, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img"
+    ".nav-item a, .en button, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img, #nav a"
   );
 
   hoverElements.forEach((element) => {
     element.addEventListener("mouseenter", () => {
       spotlight.style.transition = "transform 0.3s ease";
-      spotlight.style.transform = "scale(3)"; // 當滑鼠進入時放大 spotlight
+      spotlight.style.transform = "scale(5)"; // 當滑鼠進入時放大 spotlight
+      spotlight.style.mixBlendMode = "difference"; // 改變混合模式
     });
 
     element.addEventListener("mouseleave", () => {
       spotlight.style.transition = "transform 0.3s ease";
       spotlight.style.transform = "scale(1)"; // 滑鼠離開時恢復原狀
+      spotlight.style.mixBlendMode = "normal"; // 恢復混合模式
     });
   });
 });
 
 // 滾動時觸發炫光效果
-window.addEventListener("scroll", () => {
-  const flare = document.getElementById("lens-flare");
-  document.body.classList.add("scrolled");
+// window.addEventListener("scroll", () => {
+//   const flare = document.getElementById("lens-flare");
+//   document.body.classList.add("scrolled");
 
-  setTimeout(() => {
-    document.body.classList.remove("scrolled");
-  }, 800); // 0.8秒後移除
-});
+//   setTimeout(() => {
+//     document.body.classList.remove("scrolled");
+//   }, 200); // 0.2秒後移除
+// });
 
 // go top
 document.addEventListener("DOMContentLoaded", function () {

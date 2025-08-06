@@ -12,12 +12,13 @@
   height: 100%;
 }
 
-body img,
+/* body img,
 body video {
   border-radius: 10px;
-}
+} */
 #banner img,
 #banner video {
+  margin-top: 4vh;
   border-radius: 0px;
 }
 body {
@@ -254,17 +255,13 @@ body {
 /* 滑鼠藍色聚光燈效果 */
 #spotlight {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  background: radial-gradient(
-    circle,
-    var(--blue) 20%,
-    rgba(0, 86, 235, 0.2) 40%
-  );
+  width: 10px;
+  height: 10px;
+  background: rgb(50, 125, 255, 0.6);
   pointer-events: none;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  filter: blur(5px); /* 更強的模糊效果 */
+  /* filter: blur(5px); 更強的模糊效果 */
   mix-blend-mode: normal;
   transition: transform 0.2s ease-out, opacity 0.3s ease-in-out,
     mix-blend-mode 0.2s ease-out;
@@ -331,7 +328,7 @@ h5 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 10%;
   line-height: 180%;
@@ -344,58 +341,47 @@ p {
 
 /* navbar */
 #nav {
-  z-index: 2147483647 !important;
-  position: fixed !important; /* 保證固定在頁面上 */
-}
-.nav {
-  mix-blend-mode: difference;
-}
-.nav-links,
-.language {
-  display: block;
-  list-style: none;
+  /* position: fixed !important; 保證固定在頁面上 */
+  background-color: var(--white);
+  height: 5vh;
+  width: 100vw;
   position: fixed;
+  border-bottom: 0.8px solid var(--blue);
+  z-index: 999999999;
+}
+#nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
 }
 
-.nav-links {
-  top: 75vh;
-}
-
-.language {
-  top: 3vh;
-}
-#en,
-.dark {
-  border: 1px solid var(--white);
-  border-radius: 20px;
-  padding: 0.1rem 0.6rem 0.25rem 0.6rem;
-  margin-bottom: 0.3rem;
-  display: block;
-  width: fit-content;
-}
-.en button {
+.en button,
+.nav-item {
   background: none;
-  color: var(--white);
+  color: var(--blue);
   border: none;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 10%;
   line-height: 180%;
+  cursor: none;
 }
 .nav-item {
-  padding: 0.3rem 0px;
+  text-decoration: none; /* 移除底線 */
+  margin-left: 5vw;
+  cursor: none;
 }
 .nav-item a,
 .language a {
-  color: var(--white); /* 設定字體顏色為白色 */
-  text-decoration: none; /* 移除底線 */
+  color: var(--blue);
   cursor: none;
 }
 
 /*footer*/
 #footer {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--blue);
   margin-top: 10vh;
   display: flex; /* 使用 Flexbox 布局 */
   justify-content: center; /* 水平居中 */
@@ -428,9 +414,8 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 86, 235, 0.1);
   cursor: none;
-  border: none;
+  border: 0.8px solid var(--blue);
   opacity: 0;
   visibility: hidden;
   transition: all 0.1s ease;
