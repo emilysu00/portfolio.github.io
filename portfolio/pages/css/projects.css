@@ -1,18 +1,22 @@
+.blue {
+  color: var(--blue);
+}
 /* motivation */
 #motivation {
   margin-top: 30vh;
 }
 #motivation h5 {
   margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 .motive {
   display: flex;
   flex-direction: column;
   justify-content: center; /* 垂直置中 */
   vertical-align: middle;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 0.618;
   border-radius: 50%;
-  border: 1px solid var(--blue);
+  border: 2px solid var(--blue);
   padding: 20px 20px 20px 20px;
   transition: all 0.3s ease;
 }
@@ -46,8 +50,11 @@
 }
 #up-motivation h5 {
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
-
+#update h3 {
+  margin-bottom: 15vh;
+}
 /* TA */
 #TA {
   margin-top: 30vh;
@@ -93,11 +100,6 @@
 
 #research-caption {
   margin-bottom: 20vh;
-}
-#research .blue,
-#conclusion .blue,
-#motivation .blue {
-  color: var(--blue);
 }
 .persona-caption {
   margin: 10vh 0vw 2vh 0vw;
@@ -160,7 +162,7 @@
 }
 
 .margin-top-30 {
-  margin-top: 30vh;
+  margin-top: 15vh;
 }
 
 /* brainstorm */

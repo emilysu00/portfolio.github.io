@@ -356,8 +356,9 @@ p {
   padding-top: 1vh;
 }
 
-.en button,
+.en a,
 .nav-item {
+  text-decoration: none;
   background: none;
   color: var(--blue);
   border: none;

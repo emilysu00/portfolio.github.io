@@ -24,6 +24,9 @@ body img {
 #apply {
   margin-top: 20vh;
 }
+#apply img {
+  margin-top: 1vh;
+}
 #apply h5 {
   margin-top: 5vh;
   display: inline-block;
@@ -40,6 +43,11 @@ body img {
   vertical-align: middle;
   width: 20px;
   display: inline-block;
+}
+#position {
+  background-image: url("../img/sun_BG.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 /* team */
