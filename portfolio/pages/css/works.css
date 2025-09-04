@@ -26,6 +26,10 @@ body img {
 }
 #apply img {
   margin-top: 1vh;
+  object-fit: contain;
+}
+#apply1 img {
+  object-fit: contain;
 }
 #apply h5 {
   margin-top: 5vh;
