@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emily Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--my css-->
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../css/works.css" />
+
+    <!-- my js -->
+    <script defer src="../../js/script.js"></script>
+
+    <!-- urbanseed sticky chapter nav -->
+    <!-- gsap + scrolltrigger (must be before urbanseed-sticky-nav.js) -->
+<!-- urbanseed sticky chapter nav -->
+  <!-- GSAP + ScrollTrigger (must be before urbanseed-sticky-nav.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!-- urbanseed sticky chapter nav -->
+  <script defer src="../js/sticky-nav.js"></script>
+
+</head>
+  <!--body-->
+  <body class="case case-metrogo">
+  <div class="scroll-container">
+    <div id="web">
+      <div id="spotlight"></div>
+      <div id="tail"></div>
+      <div id="lens-flare"></div>
+    </div>
+
+<!--nav-->
+<section id="nav">
+  <div class="container">
+    <div class="language text-start en">
+        <a href="./en/urbanseed.html">en</a>
+    </div>
+      <div class="text-end nav-links">
+        <a class="nav-item" href="../../index.html">home</a>
+        <a class="nav-item" href="../../exp.html">exp</a>
+        <a class="nav-item" href="../../works.html">works</a>
+      </div>
+  </div>
+</section>
+
+
+<!--banner-->
+<section id="banner">
+  <div class="container">
+    <img src="../img/urbanseed/banner.webp" alt="urbanseed banner" />
+  </div>
+</section>
+
+<!-- Hero / Intro -->
+<section id="urban-hero" class="project-hero">
+  <div class="container">
+    <div class="row">
+      <!-- Left: big title -->
+      <div class="col-md-6 col-4">
+        <h3 class="hero-title">
+          Urban Seed<br />
+          都市空間中的行動設計
+        </h3>
+        <p>進行中...</p>
+      </div>
+
+      <!-- Right: overview + meta -->
+      <div class="col-md-6 col-4">
+        <div class="hero-right">
+          <!-- Overview -->
+          <div class="hero-overview">
+            <h5 class="hero-kicker">Overview</h5>
+            <p class="hero-text">
+              行道樹問題影響著城市中的日常生活，但現有的維護系統往往反應緩慢且不夠透明。我們探索如何透過結合互動性網站，提升民眾申報意願，以及透過「掃描—回報—追蹤」系統，重新建構市民觀察如何轉化為行道樹維護決策的流程。
+            </p>
+          </div>
+
+          <!-- Meta (Year / Role) -->
+          <div class="row hero-meta">
+            <div class="col-md-6 col-4">
+              <h5 class="hero-kicker">Year</h5>
+              <p class="hero-meta-text">2025.October - 2025.December</p>
+            </div>
+            <div class="col-md-6 col-4">
+              <h5 class="hero-kicker">Role</h5>
+              <p class="hero-meta-text">
+                系統設計、前端工程師<br />
+                共同設計師：吳怡靜
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Right -->
+    </div>
+  </div>
+</section>
+
+
+<!-- content -->
+ <section id="urban-content1" class="project-content">
+  <div class="container">
+    <div class="row">
+    <div class="col-4 col-md-4 chapter forpc">
+        <main class="case-split" aria-label="urbanseed case study">
+          <aside class="case-aside" aria-label="urbanseed chapters">
+            <div class="case-aside-inner">
+              <!-- 左側大標題（你可以換成真正專案名） -->
+              <nav class="case-chapter-nav">
+                <a class="case-chapter-link" href="#urban-structure"><h3>初版設計架構</h3></a>
+                <a class="case-chapter-link" href="#urban-iteration">設計改版</a>
+              </nav>
+            </div>
+          </aside>
+        </main>
+    </div>
+    <div class="col-4 col-md-8">
+      <div class="hero-overview content1" id="urban-structure">
+            <h5 class="content1">背景資料與設計架構</h5>
+            <p class="content1">
+              透過發放問卷（n=40），我們發現居民對於行道樹問題有一定的關注度，並且多數人都受到影響，但是這樣的關注並沒有轉換成為行動，因此我們以「如何讓意識轉變爲行動」為切入點，設計一套容易申報、有趣的系統，希望可以藉此讓民眾的關注轉化為改善生活的行動力。
+            </p>
+            <div class="row align-start">
+  <!-- 左：圖 -->
+  <div class="col-4 col-md-4">
+    <img class="content1" src="../img/urbanseed/data.svg" alt="data">
+  </div>
+
+  <!-- 右：卡片群 -->
+  <div class="col-4 col-md-8">
+    <div class="grid urbangird">
+      <div class="card">
+        <h5>覺察</h5>
+        <p>透過日常生活中與行道樹議題的接觸，建立對問題的關注與意識。</p>
+      </div>
+
+      <div class="card">
+        <h5>參與</h5>
+        <p>透過直覺且易於使用的回報系統，引導使用者實際參與。</p>
+      </div>
+
+      <div class="card">
+        <h5>持續</h5>
+        <p>藉由可追蹤的互動機制，維持使用者的參與動機，促成持續行動。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <h5 class="content1">初版設計</h5>
+            <img class="content1" src="../img/urbanseed/first.webp">
+      </div>
+    </div>
+  </div>
+ </section>
+
+<!-- content -->
+ <section id="urban-content2" class="project-content">
+  <div class="container">
+    <div class="row">
+    <div class="col-4 col-md-4 chapter forpc">
+        <main class="case-split" aria-label="urbanseed case study">
+          <aside class="case-aside" aria-label="urbanseed chapters">
+            <div class="case-aside-inner">
+              <!-- 左側大標題（你可以換成真正專案名） -->
+              <nav class="case-chapter-nav">
+                 <a class="case-chapter-link" href="#urban-structure">初版設計架構</a>
+                <a class="case-chapter-link" href="#urban-iteration"><h3>設計改版</h3></a>
+              </nav>
+            </div>
+          </aside>
+        </main>
+    </div>
+    <div class="col-4 col-md-8">
+      <div class="hero-overview content2" id="urban-iteration">
+            <h5 class="content2">訪談</h5>
+            <p class="content2">我們訪談了參與都市規劃相關的學生與教師，並從中整理出結構性的問題。我們發現，最初的設計方向雖然改善了通報流程，卻未能真正提升制度層級的回應效率，最終系統只會成為另外一個廢棄的申報管道而已。
+            </p>
+            <div class="grid">
+              <div class="card">
+                <h5>1. 法規不明確</h5>
+                <p>台灣的行道樹由多個政府單位分別管理，卻往往缺乏清楚、明確的法規規範</p>
+              </div>
+
+              <div class="card">
+                <h5>2. 缺乏專業判斷</h5>
+                <p>行道樹的維護工作多半外包給承包商，處理結果高度依賴個別人員的專業判斷</p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- HMW -->
+  <section class="wrapper" id="urban-hmw">
+    <div class="wrapper-content">
+    <h3>如果我們為政府單位設計一套更清楚、更有效率的工作流程呢？</h3>
+  </div>
+  </section>
+
+<!-- content -->
+ <section id="urban-content3" class="project-content">
+  <div class="container">
+    <div class="row">
+    <div class="col-4 col-md-4 chapter forpc">
+        <main class="case-split" aria-label="urbanseed case study">
+          <aside class="case-aside" aria-label="urbanseed chapters">
+            <div class="case-aside-inner">
+              <!-- 左側大標題（你可以換成真正專案名） -->
+              <nav class="case-chapter-nav">
+                 <a class="case-chapter-link" href="#urban-structure">初版設計架構</a>
+                <a class="case-chapter-link" href="#urban-iteration"><h3>設計改版</h3></a>
+              </nav>
+            </div>
+          </aside>
+        </main>
+    </div>
+    <div class="col-4 col-md-8">
+      <div class="hero-overview content3 content1">
+            <h5 class="content3">設計修正</h5>
+            <p class="content3">因此我們重新架構設計規劃，透過假設性的科技掃描技術，提升行政效率，也為政府建立SOP流程。</p>
+            <div class="grid">
+              <div class="card">
+                <h5>理解</h5>
+                <p>透過面向大眾的教育型內容，建立對行道樹議題的理解。</p>
+              </div>
+
+              <div class="card">
+                <h5>輔助決策</h5>
+                <p>建構技術支援系統，輔助以掃描為基礎的樹木狀況評估，協助判斷與決策。</p>
+              </div>
+
+              <div class="card">
+                <h5>制度回應</h5>
+                <p>建立標準作業流程（SOP），以支援更快速且一致的政府工作流程。</p>
+              </div>
+            </div>
+            <img class="content3" src="../img/urbanseed/function.webp">
+      </div>
+    </div>
+  </div>
+ </section>
+
+<!-- go top -->
+<button id="goTopBtn" class="go-top" aria-label="Go to top">
+  <span class="arrow"></span>
+</button>
+
+
+<!--footer-->
+<footer id="footer">
+  <p>&copy;SU YEN HUA Protfolio</p>
+</footer>
+    </div>
+  </div>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
