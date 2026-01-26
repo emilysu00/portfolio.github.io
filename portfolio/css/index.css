@@ -1,0 +1,305 @@
+/* hero (parallax tags) */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 4vh; /* keep space for nav */
+}
+
+.hero__type {
+  position: relative;
+  z-index: 2;
+  padding: 10vh 0vw 6vh;
+  font-family: "Abhaya Libre";
+  color: var(--blue);
+}
+
+.hero__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.hero__row--mid {
+  justify-content: center;
+  margin: 4vh 0;
+}
+
+.hero h1 {
+  font-size: clamp(64px, 9vw, 170px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.parallax {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pimg {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--w);
+  height: auto;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 72vh;
+    padding-top: 10vh;
+  }
+  .hero__type {
+    padding: 6vh 3vw 4vh;
+  }
+  .hero__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__row--mid {
+    margin: 2vh 0;
+    justify-content: flex-start;
+  }
+  .parallax {
+    opacity: 0.55;
+  }
+  .pimg {
+    width: calc(var(--w) * 0.85);
+  }
+}
+#home h2 {
+  margin: 80vh 0vw 15vh 0vw;
+  font-family: "Abhaya Libre";
+  @media (max-width: 768px) {
+    margin: 45vh 0vw 50vh 20vw;
+  }
+}
+
+/* RWD 下的 margin 設定 */
+@media (max-width: 768px) {
+  #home h2 {
+    margin: 40vh 0vw 50vh 20vw;
+  }
+}
+
+/* exp */
+#exp,
+#skill,
+#intern,
+#language {
+  margin-top: 10vh;
+}
+#language {
+  margin-bottom: 11vh;
+}
+.exp,
+.skill,
+.intern,
+.language {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  width: 100%; /* 使其寬度自適應 */
+}
+.exp,
+.date,
+.theme,
+.skill,
+.item,
+.detail {
+  display: inline-block;
+}
+.date,
+.item {
+  width: 18%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+/* works */
+
+#works {
+  margin-top: 10vh;
+}
+#works img {
+  border-radius: 10px;
+}
+/* top bar (title + filter) */
+#works .works-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#works .work-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#works .filter-btn {
+  appearance: none;
+  border: 1px solid rgba(10, 68, 255, 0.35);
+  background: transparent;
+  color: var(--blue);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+#works .filter-btn:hover {
+  border-color: rgba(10, 68, 255, 0.65);
+  cursor: none;
+}
+
+#works .filter-btn.is-active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+#works a {
+  text-decoration: none;
+}
+
+#works a:hover {
+  cursor: none;
+}
+
+/* list container + dividers */
+#works .work-list {
+  border-top: 1px solid rgba(10, 68, 255, 0.35);
+}
+#works .work-list > .work-card:last-of-type {
+  border-bottom: none;
+}
+
+#works .work-card {
+  display: flex;
+  align-items: flex-start !important;
+  gap: 3vw;
+  padding: 4vh 0;
+  border-bottom: 1px solid rgba(10, 68, 255, 0.35);
+  text-decoration: none;
+}
+
+#works .work-media {
+  flex: 0 0 38%;
+  max-width: 520px;
+}
+#works .work-media img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+#works .work-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 1.2vh;
+}
+
+#works .work-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--blue);
+}
+
+#works .work-desc {
+  margin: 0 !important;
+  max-width: 52ch;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+#works .work-meta {
+  display: none !important;
+}
+
+#works .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.6vh;
+}
+#works .tag-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
+  line-height: 1;
+}
+
+#works .work-cta {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-start !important;
+  padding-top: 2px;
+}
+#works .arrow {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  #works .works-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #works .work-filter {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #works .work-card {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  #works .work-media {
+    width: 100%;
+    max-width: none;
+  }
+  #works .work-cta {
+    align-self: flex-end;
+  }
+  #works .work-desc {
+    max-width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* 設置平滑滾動 */
+}
+
+#about,
+#works {
+  scroll-margin-top: 30vh; /* 將目標元素的上邊距設置為視窗高度的一半，將其垂直居中 */
+}
+
+/* HERO_NO_SCROLLBAR: prevent 1px/1vh overflow that creates the right scrollbar */
+:root {
+  /* fallback if main.css doesnt define them */
+  --nav-h: 56px;
+  --footer-h: 56px;
+}
+.hero {
+  min-height: calc(100vh - var(--nav-h) - var(--footer-h));
+}
