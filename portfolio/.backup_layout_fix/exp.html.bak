@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emily Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--three.js i-->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<v0.160.1>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<v0.160.1>/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!--my css-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <!--body-->
+  <body>
+  <div class="scroll-container">
+    <div id="web">
+      <div id="spotlight" class="forpc"></div>
+      <div id="tail" class="forpc"></div>
+      <div id="lens-flare"></div>
+    </div>
+
+    <!--nav-->
+<section id="nav">
+  <div class="container">
+    <div class="language text-start en">
+        <a href="./en/index.html">en</a>
+    </div>
+      <div class="text-end nav-links">
+        <a class="nav-item" href="./exp.html">exp</a>
+        <a class="nav-item" href="./projects.html">projects</a>
+        <a class="nav-item" href="./works.html">works</a>
+      </div>
+  </div>
+</section>
+
+<!--exp-->
+<section id="exp">
+    <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-md-2 col-4">
+        <h4>/experiences</h4>
+      </div>
+      <di class="col-md-9 col-4">
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2023 Dec. - 2024 Oct.</p>
+          </div>
+          <div class="theme">
+            <p id="exp1">臺藝大 視傳系111級 <br class="forphone">班級展覽《異質空間 Heterotopia》總召</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024 Apr. - 2025 Mar.</p>
+          </div>
+          <div class="theme">
+            <p id="exp2">臺藝大 視傳系111 級系學會 活動組組長</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024 Jun. - 2025 Apr.</p>
+          </div>
+          <div class="theme">
+            <p id="exp3">臺藝大 113年系展 公關組組長</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024 Jul. - 2025 .Jun</p>
+          </div>
+          <div class="theme">
+            <p id="exp4">2024-2025年度 巨思媒體集團美術部門 實習生</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2024 Nov. - 2025 Jun.</p>
+          </div>
+          <div class="theme">
+            <p id="exp5">臺藝大 視傳系設計人雜誌52期 文字總編</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2025 Jul. - 2025 Aug.</p>
+          </div>
+          <div class="theme">
+            <p id="exp6">孢子蒝設計工作室 暑期設計實習生</p>
+          </div>
+          </a>
+        </div>
+        <div data-aos="fade-left" class="exp">
+          <div class="date">
+            <p>2025 Jun. - 2026 May</p>
+          </div>
+          <div class="theme">
+            <p id="exp7">臺藝大 視傳系111級 畢業展覽 副召</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer id="footer">
+  <p>&copy; 2025 SU YEN HUA Portfolio</p>
+</footer>
+    </div>
+  </div>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/en.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

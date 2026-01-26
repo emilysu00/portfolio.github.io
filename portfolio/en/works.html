@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emily Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--three.js i-->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<v0.160.1>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<v0.160.1>/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!--my css-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <!--body-->
+  <body>
+  <div class="scroll-container">
+    <div id="web">
+      <div id="spotlight" class="forpc"></div>
+      <div id="tail" class="forpc"></div>
+      <div id="lens-flare"></div>
+    </div>
+
+    <!--nav-->
+<section id="nav">
+  <div class="container">
+    <div class="language text-start en">
+        <a href="../works.html">ch</a>
+    </div>
+      <div class="text-end nav-links">
+        <a class="nav-item" href="../en/index.html">home</a>
+        <a class="nav-item" href="../en/exp.html">exp</a>
+        <a class="nav-item" href="#">works</a>
+      </div>
+  </div>
+</section>
+
+
+<section id="works">
+  <div class="container">
+    <div class="works-topbar" data-aos="fade-right">
+      <div id="protitle"><h4>/works</h4></div>
+
+      <!-- filter (top-right). No selection = show all -->
+      <div class="work-filter" aria-label="work filter">
+        <button class="filter-btn" type="button" data-filter="uiux">UIUX</button>
+        <button class="filter-btn" type="button" data-filter="interaction">Interaction</button>
+        <button class="filter-btn" type="button" data-filter="graphic">Graphic</button>
+        <button class="filter-btn" type="button" data-filter="exhibition">Exhibition</button>
+        <button class="filter-btn" type="button" data-filter="social">Social design</button>
+      </div>
+    </div>
+
+    <div class="work-list">
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="uiux interaction" href="../pages/works/en/metrogo.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/metro/metro-bqnner.webp" alt="Metro Go banner">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Safe Track<span class="forphone"><br></span> Taipei Metro Go App Redesign</h5>
+          <p class="work-desc">Interactive design responding to urban commuting anxiety.<br>
+This project focuses on how people perceive risk and safety in high-density public transportation. By reorganizing scattered safety information into a clear and actionable interface, Safe Track helps commuters make informed decisions without increasing cognitive load.</p>
+          <div class="tag-list">
+            <span class="tag-pill">UIUX</span>
+            <span class="tag-pill">User research</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="uiux interaction social" href="../pages/works/en/urbanseed.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/urbanseed/banner.webp" alt="Urban Seed banner">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Urban Seed<span class="forphone"><br></span> Designing Action within Urban Space</h5>
+          <p class="work-desc">An interactive project addressing street tree issues in cities.<br>
+Urban Seed creates accessible reporting entry points and a structured workflow to help citizens participate in urban tree maintenance. The system translates fragmented public observations into information that governments can better understand and act upon.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Interaction WebDesign</span>
+            <span class="tag-pill">Interaction Desgin</span>
+            <span class="tag-pill">UIUX</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="brand exhibition" href="../pages/works/en/treasure.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/treasure/project-1.webp" alt="Treasure Hill new">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Treasure Hill Artist Village Rebranding</h5>
+          <p class="work-desc">A spatial branding project for an artist village.<br>
+Through field research and on-site observation, this project rethinks the brand positioning of Treasure Hill Artist Village. Cultural narratives and visual identity are integrated into the environment, allowing the brand to become part of everyday spatial experience.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Brand Design</span>
+            <span class="tag-pill">Exhibition</span>
+            <span class="tag-pill">EIS</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="exhibition social" href="../pages/works/en/Xiangshan.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/x/project-x.webp" alt="Xiangshan">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Beyond the Sea<span class="forphone"><br></span> the corner of fields and SEA</h5>
+          <p class="work-desc">A community-based exhibition and cultural intervention.<br>
+This project engages the Xiangshan area through exhibitions, guided walks, and local markets. By activating everyday spaces, it encourages both residents and visitors to reconnect with local culture and reconsider their relationship with the land.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Exhibition</span>
+            <span class="tag-pill">Community Desgin</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="Graphic interaction" href="../pages/works/en/downgo.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/downgo/downgo 16.49.09 16.47.37.webp" alt="Down Go">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Down Go<span class="forphone"><br></span> Mountain First Aid</h5>
+          <p class="work-desc">A gamified learning platform for hiking safety.<br>
+Using pixel art and game-based interaction, Down Go transforms hiking guidelines and emergency self-rescue knowledge into an engaging learning experience. The project aims to reduce the distance between users and critical safety information.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Interaction</span>
+            <span class="tag-pill">WebDesign</span>
+            <span class="tag-pill">Graphic</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="graphic" href="../pages/works/en/sun.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/sun/sun-banner.webp" alt="Sun">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Suncrest<span class="forphone"><br></span> Drip Bag Coffee Branding</h5>
+          <p class="work-desc">Brand identity design for a drip coffee brand.<br>
+Starting from brand positioning and competitor analysis, Suncrest builds its identity around the local flavor of Taimali. The visual system extends from the imagery of the sun, creating a warm and recognizable brand language.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Graphic</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+
+      <a data-aos="fade-up" class="work-card pro" data-filters="uiux interaction social" href="../pages/works/en/homie.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/homie/banner.webp" alt="Homie">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Homie<span class="forphone"><br></span> A Support System for Young Renters</h5>
+          <p class="work-desc">A service design project supporting young renters.<br>
+Homie addresses information overload and emotional stress in the rental process. Through guided interactions, it helps users organize rental experiences, reduce decision-making friction, and connect with external support when legal issues arise.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Service Design</span>
+            <span class="tag-pill">UIUX</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+      <a data-aos="fade-up" class="work-card pro" data-filters="graphic" href="../pages/works/en/book.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/book/book-banner.webp" alt="Homie">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Cipher<span class="forphone"><br></span> Book Design</h5>
+          <p class="work-desc">A book design inspired by cryptography and intelligence systems.<br>
+Cipher explores the relationship between codes, warfare, and information through visual language. The design uses black, gray, and white as the base, with red accents to symbolize alerts, risk, and critical data.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Graphic</span>
+            <span class="tag-pill">Book Design</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+      <a data-aos="fade-up" class="work-card pro" data-filters="graphic" href="../pages/works/en/ticket.html">
+        <div class="work-media">
+          <img loading="lazy" src="../pages/img/ticket/ticket-banner.webp" alt="Homie">
+        </div>
+        <div class="work-body">
+          <h5 class="work-title">Guangfu VI   Extension Design</h5>
+          <p class="work-desc">Visual extensions for a film festival identity.<br>
+Building on the main visual system, this project develops ticket designs and related materials. A black-and-gold palette creates a restrained yet ceremonial atmosphere, enhancing audience engagement and brand presence.</p>
+          <div class="tag-list">
+            <span class="tag-pill">Graphic</span>
+          </div>
+        </div>
+        <div class="work-cta">
+          <img class="arrow" loading="lazy" src="../img/arrow-go.svg" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer">
+  <p>&copy; 2026 SU YEN HUA Portfolio</p>
+</footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script type="module" src="../js/en.js"></script>
+    <script type="module" src="../js/works-filter.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

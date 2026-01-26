@@ -1,0 +1,191 @@
+AOS.init({
+  offset: 200, // 設定觸發動畫的距離
+  delay: 0, // 動畫延遲時間
+  duration: 800, // 動畫持續時間
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const spotlight = document.getElementById("spotlight");
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let lastX = 0;
+  let lastY = 0;
+
+  // 更新滑鼠位置的函數
+  const updateMousePosition = (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // 計算 spotlight 和 tail 的寬度與高度
+    const spotlightWidth = spotlight.offsetWidth;
+    const spotlightHeight = spotlight.offsetHeight;
+
+    // 更新 spotlight 和 tail 位置，將元素中心與滑鼠位置對齊
+    spotlight.style.left = `${mouseX - spotlightWidth / 2}px`;
+    spotlight.style.top = `${mouseY - spotlightHeight / 2}px`;
+
+    const deltaX = mouseX - lastX;
+    const deltaY = mouseY - lastY;
+
+    lastX = mouseX;
+    lastY = mouseY;
+  };
+
+  // 確保每次移動滑鼠時都會觸發 updateMousePosition 函數
+  document.addEventListener("mousemove", updateMousePosition);
+
+  // 設置 hover 事件效果
+  const hoverElements = document.querySelectorAll(
+    ".nav-item a, .en button, .language a, .work a, .pro a, .articles a, .apply a, .update a, .go-top img, #nav a",
+  );
+
+  hoverElements.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      spotlight.style.transition = "transform 0.3s ease";
+      spotlight.style.transform = "scale(5)"; // 當滑鼠進入時放大 spotlight
+      spotlight.style.mixBlendMode = "difference"; // 改變混合模式
+    });
+
+    element.addEventListener("mouseleave", () => {
+      spotlight.style.transition = "transform 0.3s ease";
+      spotlight.style.transform = "scale(1)"; // 滑鼠離開時恢復原狀
+      spotlight.style.mixBlendMode = "normal"; // 恢復混合模式
+    });
+  });
+});
+
+// 滾動時觸發炫光效果
+// window.addEventListener("scroll", () => {
+//   const flare = document.getElementById("lens-flare");
+//   document.body.classList.add("scrolled");
+
+//   setTimeout(() => {
+//     document.body.classList.remove("scrolled");
+//   }, 200); // 0.2秒後移除
+// });
+
+// go top
+document.addEventListener("DOMContentLoaded", function () {
+  const goTopBtn = document.querySelector(".go-top");
+
+  // scroll 時判斷顯示
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  // 點擊滾動回頂部
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+console.log("goTop script loaded");
+
+//en mode
+// document.querySelector(".en").addEventListener("click", function () {
+//   changeLanguage("en");
+// });
+
+// go top
+document.addEventListener("DOMContentLoaded", function () {
+  const goTopBtn = document.querySelector(".go-top");
+
+  // scroll 時判斷顯示
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  // 點擊滾動回頂部
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+console.log("goTop script loaded");
+
+// //dark mode
+// document.querySelector(".dark").addEventListener("click", function () {
+//   document.body.classList.toggle("dark-mode");
+
+//   // 切換按鈕的文字
+//   if (document.body.classList.contains("dark-mode")) {
+//     this.textContent = "light"; // 切換為 light
+//   } else {
+//     this.textContent = "dark"; // 切換回 dark
+//   }
+//   // 根據當前模式自動更新滑鼠指標的混合模式
+//   if (document.body.classList.contains("dark-mode")) {
+//     document.body.style.mixBlendMode = "screen"; // 在 dark 模式下使用 screen 混合模式
+//   } else {
+//     document.body.style.mixBlendMode = "normal"; // 在 light 模式下使用 normal 混合模式
+//   }
+// });
+
+//main 圖片浮現
+window.addEventListener("DOMContentLoaded", () => {
+  const img = document.querySelector("#home .img img");
+  if (!img) return;
+  // 加一點延遲也可以讓畫面更柔和
+  setTimeout(() => {
+    img.classList.add("fade-in");
+  }, 600);
+});
+
+// hero parallax (photos follow cursor)
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.getElementById("hero");
+  if (!hero) return;
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  if (reduceMotion) return;
+
+  const imgs = Array.from(hero.querySelectorAll(".pimg"));
+  if (!imgs.length) return;
+
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  const ease = 0.08; // lower = snappier, higher = smoother
+
+  const onMove = (e) => {
+    const rect = hero.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width; // 0..1
+    const y = (e.clientY - rect.top) / rect.height; // 0..1
+    targetX = (x - 0.5) * 2; // -1..1
+    targetY = (y - 0.5) * 2; // -1..1
+  };
+
+  const raf = () => {
+    currentX += (targetX - currentX) * ease;
+    currentY += (targetY - currentY) * ease;
+
+    imgs.forEach((img) => {
+      const depth = Number(img.dataset.depth || 12);
+      const rot = Number(img.dataset.rotate || 0);
+      const moveX = currentX * depth;
+      const moveY = currentY * depth;
+      img.style.transform = `translate(-50%, -50%) translate3d(${moveX}px, ${moveY}px, 0) rotate(${rot}deg)`;
+    });
+
+    requestAnimationFrame(raf);
+  };
+
+  hero.addEventListener("mousemove", onMove, { passive: true });
+  requestAnimationFrame(raf);
+});

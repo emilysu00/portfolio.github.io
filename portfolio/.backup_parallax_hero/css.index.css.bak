@@ -1,0 +1,248 @@
+/* home */
+#home h2 {
+  margin: 80vh 0vw 15vh 0vw;
+  font-family: "Abhaya Libre";
+  @media (max-width: 768px) {
+    margin: 45vh 0vw 50vh 20vw;
+  }
+}
+/* 
+#home {
+  position: relative;
+}
+#home .img img {
+  width: 70vw;
+  height: auto;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s ease-out, transform 1.2s ease-out;
+}
+#home .img img.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+#home .img {
+  display: flex;
+  margin-left: -2vw;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; 
+}
+#home h2 {
+  margin: 0vh 0vw 15vh 0vw;
+  font-family: "Abhaya Libre";
+} */
+
+/* RWD 下的 margin 設定 */
+@media (max-width: 768px) {
+  #home h2 {
+    margin: 40vh 0vw 50vh 20vw;
+  }
+}
+
+/* about */
+#about .row {
+  display: flex;
+}
+#self-protrait-phone {
+  margin-bottom: 2vh;
+}
+#about h2 {
+  margin: 72vh 5vw 3vh 0vw;
+  font-family: "Abhaya Libre";
+  color: var(--blue);
+  line-height: normal;
+  @media (max-width: 768px) {
+    margin: -5vh 0vw 0vh 10vw;
+  }
+}
+#about p {
+  margin: 45vh 5vw 3vh 0vw;
+  @media (max-width: 768px) {
+    margin: 2vh 0vw 0vh 20vw;
+  }
+}
+#about img {
+  margin-bottom: -0.5vh;
+  margin-top: 12vh;
+}
+/* exp */
+#exp {
+  margin-top: 30vh;
+}
+.exp {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  width: 100%; /* 使其寬度自適應 */
+}
+.exp,
+.date,
+.theme {
+  display: inline-block;
+}
+.date {
+  width: 22%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/* projects */
+#projects {
+  margin-top: 30vh;
+}
+#projects a {
+  text-decoration: none;
+}
+#projects h5 {
+  padding: 2vh 0vw;
+  color: var(--blue);
+}
+#projects .arrow {
+  width: 30px;
+}
+#projects .banner {
+  aspect-ratio: 16 / 9; /* 或 4 / 3，看你想要什麼比例 */
+  overflow: hidden;
+}
+
+#projects .banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.project-row {
+  display: flex;
+  gap: 16px; /* 卡片間距 */
+}
+@media (max-width: 768px) {
+  .project-row {
+    flex-wrap: wrap;
+  }
+}
+.pro {
+  padding: 20px 20px 20px 20px;
+  transition: all 0.3s ease;
+}
+#projects a:hover {
+  cursor: none;
+}
+.tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* works */
+#works {
+  margin-top: 30vh;
+  display: flex; /* 使用 Flexbox 讓 work-left 和 work-right 並列 */
+  justify-content: space-between; /* 確保兩個區塊之間有適當的空間 */
+}
+.work {
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.work img {
+  width: 30vw;
+}
+.work .items {
+  position: relative;
+  height: 100%;
+  overflow: hidden; /* 重點！ */
+}
+.work p {
+  margin: -1vh 1vw 3vh 1vw;
+  white-space: nowrap; /* 不換行 */
+  width: fit-content;
+  color: var(--blue);
+  background-color: #fafafa99;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-weight: 400;
+}
+.work a {
+  text-decoration: none;
+}
+#work-left,
+#work-right {
+  display: block;
+  flex-wrap: wrap; /* 使內部元素換行 */
+  justify-content: space-between; /* 在水平方向上分散排列 */
+  width: 70%; /* 確保每個區塊佔 50% 寬度 */
+}
+#work-right {
+  margin-top: 10vh;
+  margin-left: 5vw;
+}
+#works a:hover {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  .work {
+    flex-wrap: wrap;
+  }
+  #work-left,
+  #work-right {
+    width: 100%; /* 確保每個區塊佔 50% 寬度 */
+  }
+  .work img {
+    width: 80vw;
+  }
+  #work-right {
+    margin-top: 0vh;
+  }
+}
+
+/* articles */
+#articles {
+  margin-top: 30vh;
+}
+#articles a {
+  text-decoration: none;
+}
+#articles h5 {
+  color: var(--blue);
+}
+#articles img {
+  width: 20px;
+  align-items: end;
+}
+.articles-row {
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 0.5px solid var(--blue); /* 請注意 var() 要有 -- 變數名稱 */
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.article-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article-date {
+  display: inline-block;
+}
+
+.article-title {
+  display: inline-block;
+}
+
+#articles a:hover {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth; /* 設置平滑滾動 */
+}
+
+#about,
+#projects,
+#works,
+#articles {
+  scroll-margin-top: 30vh; /* 將目標元素的上邊距設置為視窗高度的一半，將其垂直居中 */
+}
