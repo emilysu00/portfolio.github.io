@@ -1,0 +1,334 @@
+/* 你的固定 header / nav 佔多少高度，就填多少 */
+:root {
+  --anchor-offset: 120px;
+}
+body h4 {
+  color: var(--blue);
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 5%;
+}
+/* 讓跳到 #xxx 時，上方自動保留空間 */
+#metro-research,
+#metro-focus,
+#metro-testing,
+#downgo-web,
+#downgo-graphic,
+#sea-structure,
+#sea-main,
+#sea-video,
+#treasure-research,
+#treasure-first,
+#treasure-iteration,
+#treasure-outcome,
+#treasure-process,
+#urban-structure,
+#urban-iteration,
+#homie-research,
+#homie-solution {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+.overview p {
+  margin: 3vh 0;
+  padding: 4px 24px;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid var(--blue);
+  width: fit-content;
+}
+
+#banner {
+  margin-bottom: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-swiper {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.banner-swiper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 你要的點點顏色（未選取） */
+#banner .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.35); /* 自己換色 */
+  opacity: 1; /* Swiper 會用 opacity 控制，建議固定 */
+}
+
+/* 目前那顆（選取中） */
+#banner .swiper-pagination-bullet-active {
+  background: #2e2e2e; /* 例如紅色亮點，自己換 */
+}
+/* swiper 要能疊上按鈕 */
+#banner .banner-swiper {
+  position: relative;
+}
+
+/* 左右透明點擊區 */
+#banner .banner-nav {
+  position: absolute;
+  top: 0;
+  width: 18%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: none; /* 你有自製 cursor，通常要關掉系統 cursor */
+  z-index: 5;
+}
+
+/* 左右位置 */
+#banner .banner-prev {
+  left: 0;
+}
+#banner .banner-next {
+  right: 0;
+}
+
+#banner img,
+#banner video {
+  margin-top: 1vh;
+  border-radius: 10px;
+}
+/* =========================
+   Mobile Banner Fix
+   ========================= */
+@media (max-width: 768px) {
+  .hero-meta-text {
+    margin-bottom: 5vh;
+  }
+  #banner .banner-swiper {
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* 3) 圖片改成 cover，填滿 slide，不要留空 */
+  #banner .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  #banner img,
+  #banner video {
+    margin-top: 2vh;
+    border-radius: 10px;
+  }
+
+  /* 5) pagination 位置調整（可選） */
+  #banner .swiper-pagination {
+    bottom: 10px !important;
+  }
+
+  /* 6) 手機縮小左右點擊區，避免太大不好滑 */
+  #banner .banner-nav {
+    width: 14%;
+  }
+}
+
+body h5 {
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+body img,
+body video {
+  width: 100%;
+  border-radius: 10px;
+}
+body video {
+  margin-top: 2vh;
+}
+
+/* intro */
+.project-hero {
+  margin-top: 5vh;
+}
+.project-hero h3 {
+  color: var(--blue);
+}
+.hero-meta {
+  margin-top: 5vh;
+}
+
+/* content */
+.project-content {
+  margin-top: 20vh;
+}
+
+/* content1 */
+.content1 img {
+  margin-top: 3vh;
+}
+.img-row {
+  margin-top: 2vh;
+}
+.img-row img {
+  margin-top: 0;
+}
+.content1 h5 {
+  margin-top: 8vh;
+}
+
+/* 親和圖區塊 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 3vh;
+}
+.urbangird {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+/* 卡片本體 */
+.card {
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: white;
+}
+
+/* 標題 */
+.card h5 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* wrapper */
+section.wrapper {
+  margin: 10vh 0;
+  height: 80vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 247, 247, 1),
+    rgba(181, 206, 255, 0.6),
+    rgba(75, 135, 255, 0.7),
+    rgba(50, 125, 255, 0.8),
+    rgba(75, 135, 255, 0.7),
+    rgba(181, 206, 255, 0.6),
+    rgba(247, 247, 247, 1)
+  );
+
+  display: flex;
+  align-items: center; /* 垂直置中（重點） */
+  justify-content: center; /* 水平置中 */
+}
+
+.wrapper h3,
+.wrapper h4 {
+  color: var(--white);
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding-bottom: 12px;
+}
+.conternt2 {
+  margin-top: 10vh;
+}
+/* ================================
+   MetroGo split layout (sticky left chapter nav)
+   Scope: only MetroGo case page
+================================ */
+
+.case.case-metrogo .case-split {
+  width: min(1160px, 92vw);
+  margin-top: 8vh;
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 72px);
+}
+
+.case.case-metrogo .case-aside {
+  position: sticky;
+  top: 110px; /* leave space for the top nav */
+  align-self: start;
+  height: fit-content;
+}
+
+/* When ScrollTrigger pin is active, disable CSS sticky to avoid conflicts */
+html.has-scrolltrigger .case.case-metrogo .case-aside {
+  position: relative;
+  top: auto;
+}
+
+.case.case-metrogo .case-aside-title {
+  margin: 0 0 14px 0;
+}
+
+.case.case-metrogo .case-chapter-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case.case-metrogo .case-chapter-link {
+  text-decoration: none;
+  color: var(--blue);
+  cursor: none;
+}
+
+.case.case-metrogo .case-chapter-link:not(:has(h3)) {
+  opacity: 0.5;
+}
+
+.case.case-metrogo .case-chapter-link.is-active {
+  opacity: 1;
+  color: var(--blue);
+}
+
+.case.case-metrogo .case-main {
+  min-width: 0;
+}
+
+/* Mobile: stack the nav on top (no sticky) */
+@media (max-width: 900px) {
+  .case.case-metrogo .case-split {
+    grid-template-columns: 1fr;
+  }
+
+  .case.case-metrogo .case-aside {
+    position: static;
+  }
+
+  .case.case-metrogo .case-aside-inner {
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+
+  .case.case-metrogo .case-chapter-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* YouTube / iframe 共用影片容器 */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 跟你原本影片一樣 */
+  overflow: hidden;
+  border-radius: 10px; /* 如果你影片本來就有圓角 */
+}
+
+/* 讓 iframe 吃滿容器 */
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
